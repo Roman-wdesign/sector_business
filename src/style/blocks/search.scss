@@ -1,0 +1,15 @@
+.search {
+
+}
+
+.search-input {
+  color: white;
+  border: none;
+  background-color: $search_background;
+  width: 631px;
+  height: 52px;
+
+  ::placeholder {
+    color: $search_color;
+  }
+}
