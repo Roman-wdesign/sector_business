@@ -1,0 +1,39 @@
+@mixin Roboto_400_Regular {
+  font: {
+    style: normal;
+    family: $font_Roboto_400_Regular;
+    size: 14px;
+    weight: 400;
+  }
+  line-height: 137.69%;
+}
+
+@mixin Roboto_500_Medium {
+  font: {
+    style: normal;
+    family: $font_Roboto_500_Medium;
+    size: 13px;
+    weight: 500;
+  }
+  line-height: 137.69%;
+}
+
+@mixin Roboto_600_SemiBold {
+  font: {
+    style: normal;
+    family: $font_Roboto_600_SemiBold;
+    size: 14px;
+    weight: 600;
+  }
+  line-height: 137.69%;
+}
+
+@mixin Roboto_700_Bold {
+  font: {
+    style: italic;
+    family: $font_Roboto_700_BoldItalic;
+    size: 18px;
+    weight: 700;
+  }
+  line-height: 137.69%;
+}

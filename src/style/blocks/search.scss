@@ -3,6 +3,7 @@
 }
 
 .search-input {
+  @include Roboto_400_Regular;
   color: white;
   border: none;
   background-color: $search_background;
@@ -10,6 +11,7 @@
   height: 52px;
 
   ::placeholder {
+
     color: $search_color;
   }
 }
