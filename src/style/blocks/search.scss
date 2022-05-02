@@ -1,7 +1,10 @@
 
 .search {
-  width: 631px;
-  height: 52px;
+
+  margin: 0;
+  max-width: 631px;
+  width: auto;
+  height: auto;
   position: relative;
   background-color: $search_background;
 
@@ -10,10 +13,11 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 24px;
+    right: 26px;
     margin: auto 0;
     width: 21px;
     height: 20.98px;
+
 
 
     background-image: url($ico_path + "search.svg");
@@ -21,7 +25,7 @@
     background-size: cover;
   }
 
-  &__input {
+  .search__input {
 
     @include Roboto_400_Regular;
     color: white;
@@ -29,12 +33,12 @@
     background-color: $search_background;
 
 
-    width: 100%;
+    padding: 0 0 0 26px;
+    width: 605px;
     height: 52px;
-    padding: 0 24px;
+
 
     ::placeholder {
-
       color: $search_color;
     }
   }
