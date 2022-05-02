@@ -1,17 +1,41 @@
+
 .search {
-
-}
-
-.search-input {
-  @include Roboto_400_Regular;
-  color: white;
-  border: none;
-  background-color: $search_background;
   width: 631px;
   height: 52px;
+  position: relative;
+  background-color: $search_background;
 
-  ::placeholder {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 24px;
+    margin: auto 0;
+    width: 21px;
+    height: 20.98px;
 
-    color: $search_color;
+
+    background-image: url($ico_path + "search.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__input {
+
+    @include Roboto_400_Regular;
+    color: white;
+    border: none;
+    background-color: $search_background;
+
+
+    width: 100%;
+    height: 52px;
+    padding: 0 24px;
+
+    ::placeholder {
+
+      color: $search_color;
+    }
   }
 }

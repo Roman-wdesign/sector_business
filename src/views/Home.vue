@@ -1,9 +1,10 @@
 <template>
   <div class="container">
-    <div class="header">
-      <div class="home">
-        <h1>Home</h1>
+    <div class="wrap">
+      <div class="header">
         <mcv-search/>
+      </div>
+      <div class="content">
         <mcv-product-list/>
       </div>
     </div>

@@ -1,0 +1,17 @@
+.arrow {
+    right: 10px;
+    top: 35%;
+    width: 4.59px;
+    height: 4.59px;
+    margin-left: 25px;
+
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+
+    transform: rotateZ(45deg) translateY(0px);
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(.59, 1.39, .37, 1.01);
+}
+
+
+

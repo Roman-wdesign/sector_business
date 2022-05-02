@@ -1,0 +1,28 @@
+.table{
+@include Roboto_600_SemiBold;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 15px;
+  max-width: 1070px;
+  width: 100%;
+  height: 57px;
+  padding: 0 23px;
+
+  background-color: $header_background;
+  color:#ffffff;
+  box-shadow: 0 4px 27px rgba(230, 231, 234, 0.78);
+
+  &__id{
+   @include flex_table;
+  }
+  &__header{
+    @include flex_table;
+  }
+  &__description{
+    @include flex_table;
+  }
+}

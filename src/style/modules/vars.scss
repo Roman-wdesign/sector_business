@@ -1,16 +1,20 @@
-// Search component
+// colors
 
 $search_background: #5A5C66;
-$search_color:#B3B7BF;
+$search_color:#B2B7BF;
+$border_color:1px solid #E3E6EC;
+
+$pagination_active_color:#7EBC3C;
 
 
 // Header component
 
-$header_background: rgba(230, 231, 234, 78%);
+$header_background: #474955;
 
 //fonts
 
 $font_path: '../assets/fonts/';
+$ico_path: '../assets/svg/';
 
 $font_Roboto_400_Regular:'Roboto_400_Regular';
 $font_Roboto_500_Medium:'Roboto_500_Medium';

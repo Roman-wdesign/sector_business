@@ -2,7 +2,7 @@
   <div class="search">
     <input
         type="text"
-        class="search-input"
+        class="search__input"
         placeholder="Поиск"
     >
   </div>

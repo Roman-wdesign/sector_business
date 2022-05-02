@@ -1,0 +1,21 @@
+.item {
+
+  display: grid;
+  grid-template-columns: 110px 529px 432px;
+  grid-template-rows: 87px;
+
+  @include Roboto_500_Medium;
+  color: $header_background;
+
+  &__header {
+    @include flex_item;
+  }
+
+  &__description {
+    @include flex_item;
+  }
+
+  &__body {
+    @include flex_item;
+  }
+}

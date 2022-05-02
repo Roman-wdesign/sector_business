@@ -5,7 +5,7 @@
     size: 14px;
     weight: 400;
   }
-  line-height: 137.69%;
+  line-height: 19.28px;
 }
 
 @mixin Roboto_500_Medium {
@@ -15,7 +15,7 @@
     size: 13px;
     weight: 500;
   }
-  line-height: 137.69%;
+  line-height: 17.9px;
 }
 
 @mixin Roboto_600_SemiBold {
@@ -25,7 +25,7 @@
     size: 14px;
     weight: 600;
   }
-  line-height: 137.69%;
+  line-height: 19.28px;
 }
 
 @mixin Roboto_700_Bold {
@@ -35,5 +35,18 @@
     size: 18px;
     weight: 700;
   }
-  line-height: 137.69%;
+  line-height: 24.78px;
+}
+
+@mixin flex_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: $border_color;
+  padding: 12px;
+}
+
+@mixin flex_table {
+  display: flex;
+  align-items: center;
 }

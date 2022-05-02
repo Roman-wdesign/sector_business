@@ -1,11 +1,25 @@
 <template>
   <div>
-    <p>Prod list</p>
-    <mcv-product
-        v-for="(product, index) in PRODUCTS"
-        :product_data="product"
-        :key="index"
-    />
+    <div class="table">
+      <div class="table__id">ID
+        <div class="arrow"></div>
+      </div>
+
+      <div class="table__header">Заголовок
+        <div class="arrow"></div>
+      </div>
+      <div class="table__description">Описание
+        <div class="arrow"></div>
+      </div>
+    </div>
+    <div class="grid">
+      <mcv-product
+          v-for="(product, index) in PRODUCTS"
+          :product_data="product"
+          :key="index"
+      />
+    </div>
+
   </div>
 </template>
 
