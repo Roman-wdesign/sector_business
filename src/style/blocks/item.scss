@@ -1,5 +1,4 @@
 .item {
-
   display: grid;
   grid-template-columns: 110px 529px 432px;
   grid-template-rows: 87px;
@@ -12,10 +11,10 @@
   }
 
   &__description {
-    @include flex_item;
+    @include flex_item_2;
   }
 
   &__body {
-    @include flex_item;
+    @include flex_item_2;
   }
 }

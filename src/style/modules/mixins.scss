@@ -45,6 +45,13 @@
   border: $border_color;
   padding: 12px;
 }
+@mixin flex_item_2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: $border_color;
+  padding: 12px;
+}
 
 @mixin flex_table {
   display: flex;

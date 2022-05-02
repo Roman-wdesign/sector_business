@@ -1,5 +1,5 @@
-.table{
-@include Roboto_600_SemiBold;
+.table {
+  @include Roboto_600_SemiBold;
 
   display: flex;
   flex-direction: row;
@@ -10,19 +10,27 @@
   max-width: 1070px;
   width: 100%;
   height: 57px;
-  padding: 0 23px;
+  padding: 0  211px 0 23px;
 
   background-color: $header_background;
-  color:#ffffff;
+  color: #ffffff;
   box-shadow: 0 4px 27px rgba(230, 231, 234, 0.78);
 
-  &__id{
-   @include flex_table;
-  }
-  &__header{
+  &__id {
+    //width: 110px;
+    //height: 54px;
     @include flex_table;
   }
-  &__description{
+
+  &__header {
+    //width: 529px;
+    //height: 54px;
+    @include flex_table;
+  }
+
+  &__description {
+    //width: 432px;
+    //height: 54px;
     @include flex_table;
   }
 }

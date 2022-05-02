@@ -7,6 +7,7 @@
       <div class="content">
         <mcv-product-list/>
       </div>
+      <mcv-footer/>
     </div>
   </div>
 </template>
@@ -14,10 +15,11 @@
 <script>
 import McvProductList from "@/components/ProductList";
 import McvSearch from "@/components/Search";
+import McvFooter from "@/views/Footer";
 
 export default {
   name: "McvHome",
-  components: {McvSearch, McvProductList}
+  components: {McvFooter, McvSearch, McvProductList}
 }
 </script>
 
