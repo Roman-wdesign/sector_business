@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import getDataFromApi from '@/store/modules/getData'
+import getData from '@/store/modules/getData'
 
 Vue.use(Vuex)
 
@@ -15,6 +15,6 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    getDataFromApi
+    getData
   }
 })

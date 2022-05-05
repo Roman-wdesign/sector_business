@@ -3,18 +3,23 @@
 @import "modules/fonts";
 @import "modules/mixins";
 
-@import "blocks/wrap";
+
 @import "blocks/search";
-@import "blocks/grid";
 @import "blocks/item";
 @import "blocks/table";
 @import "blocks/arrow";
-@import "blocks/footer";
+@import "blocks/pagination";
 
 .container {
   margin: 0 auto;
   padding: 23px 0 12px 0;
   display: flex;
   justify-content: center;
+}
+
+.wrap{
+  display:flex;
+  flex-direction: column;
+
 }
 

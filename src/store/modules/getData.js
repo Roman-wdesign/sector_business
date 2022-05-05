@@ -4,7 +4,6 @@ const state = {
     products: []
 }
 
-
 const getters = {
     PRODUCTS(state) {
         return state.products
@@ -17,7 +16,6 @@ const mutations = {
     }
 
 }
-
 
 const actions = {
     GET_PRODUCTS_FROM_API({ commit }) {
@@ -41,8 +39,6 @@ const actions = {
             });
     },
 }
-
-
 
 export default {
     state,

@@ -16,21 +16,7 @@
   color: #ffffff;
   box-shadow: 0 4px 27px rgba(230, 231, 234, 0.78);
 
-  &__id {
-    //width: 110px;
-    //height: 54px;
-    @include flex_table;
-  }
-
-  &__header {
-    //width: 529px;
-    //height: 54px;
-    @include flex_table;
-  }
-
-  &__description {
-    //width: 432px;
-    //height: 54px;
+  &__id, &__header, &__description{
     @include flex_table;
   }
 }

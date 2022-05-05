@@ -5,8 +5,8 @@
     height: 4.59px;
     margin-left: 35px;
 
-    border-right: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-right: $arrow_color;
+    border-bottom: $arrow_color;
 
     transform: rotateZ(45deg) translateY(0px);
     transition-duration: 0.3s;

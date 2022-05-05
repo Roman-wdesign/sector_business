@@ -1,0 +1,32 @@
+
+.footer {
+  padding: 0 16px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-forward ,.footer-back{
+  @include button_style;
+}
+
+.pagination {
+  display: table;
+
+  &__item {
+    :hover{
+      color:$search_background;
+    }
+    display: table-cell;
+    padding: 0 3px;
+  }
+
+  &__link {
+    @include Roboto_500_Medium;
+  }
+}
+
+.active{
+color:$pagination_active_color;
+}
