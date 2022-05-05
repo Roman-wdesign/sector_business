@@ -1,6 +1,12 @@
 <template>
   <div class="footer">
-    <button class="footer-back">Назад</button>
+    <button
+        @click="prevPage"
+        class="footer-back"
+        :disabled="pageNumber === 1"
+    >
+      Назад
+    </button>
     <ul class="pagination">
       <li
           v-for="page in pages"
@@ -15,7 +21,13 @@
         </router-link>
       </li>
     </ul>
-    <button class="footer-forward">Далее</button>
+    <button
+        @click="forwardPage"
+        class="footer-forward"
+        :disabled="pageNumber >= this.pages.length"
+    >
+      Далее
+    </button>
   </div>
 </template>
 
@@ -25,6 +37,10 @@ import {range} from "@/helpers/utils";
 export default {
   name: "McvPagination",
   props: {
+    pageNumber: {
+      type: Number,
+      required: true
+    },
     total: {
       type: Number,
       required: true
@@ -40,6 +56,14 @@ export default {
     url: {
       type: String,
       required: true
+    }
+  },
+  methods: {
+    forwardPage() {
+      this.$emit('forwardPage')
+    },
+    prevPage() {
+      this.$emit('prevPage')
     }
   },
   computed: {

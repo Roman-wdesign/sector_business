@@ -60,6 +60,7 @@
 
 @mixin button_style{
   padding: 15px 32px;
+  cursor: pointer;
 
   &:hover {
     color: white;
@@ -68,5 +69,5 @@
   }
 
   @include Roboto_500_Medium;
-  cursor: pointer;
+
 }

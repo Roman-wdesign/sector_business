@@ -20,10 +20,13 @@
           :key="index"
       />
       <mcv-pagination
-          :total="PRODUCTS.length"
+          :page-number="pageNumber"
+          :total="totalPages"
           :limit="limit"
           :current-page="currentPage"
           :url="baseUrl"
+          @forwardPage="forwardPage"
+          @prevPage="prevPage"
       />
     </div>
   </div>
@@ -38,17 +41,23 @@ import {limit} from "@/helpers/vars";
 
 export default {
   props: {},
-  data: () => ({}),
+  data: () => ({
+    pageNumber: 5
+  }),
   name: "McvProductList",
   components: {McvProduct, McvPagination},
   computed: {
     ...mapGetters([
       'PRODUCTS'
     ]),
+    totalPages() {
+      return this.PRODUCTS.length;
+    },
+
     paginatedData() {
-      let from = (this.currentPage - 1) * limit;
-      let to = from + this.limit;
-      return this.PRODUCTS.slice(from, to)
+      let start = (this.currentPage - 1) * limit;
+      let end = start + this.limit;
+      return this.PRODUCTS.slice(start, end)
     },
     limit() {
       return limit
@@ -57,11 +66,19 @@ export default {
       return this.$route.path
     },
     currentPage() {
-      return Number(this.$route.query.page || '5')
+      return Number(this.pageNumber || '5')
     },
+
   },
   methods: {
     ...mapActions(["GET_PRODUCTS_FROM_API"]),
+
+    forwardPage() {
+      this.pageNumber++;
+    },
+    prevPage() {
+      this.pageNumber--;
+    }
   },
 
   mounted() {
