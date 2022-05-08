@@ -3,7 +3,8 @@
     <button
         @click="prevPage"
         class="footer-back"
-        :disabled="pageNumber === 1"
+        :disabled="currentPage === 1"
+
     >
       Назад
     </button>
@@ -70,8 +71,9 @@ export default {
     pages() {
       const pagesCount = Math.ceil(this.total / this.limit)
       return range(1, pagesCount)
-    }
-  },
+    },
+  }
+
 }
 </script>
 

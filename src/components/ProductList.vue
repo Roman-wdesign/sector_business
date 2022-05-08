@@ -20,6 +20,7 @@
           :key="index"
       />
       <mcv-pagination
+
           :page-number="pageNumber"
           :total="totalPages"
           :limit="limit"
@@ -42,7 +43,7 @@ import {limit} from "@/helpers/vars";
 export default {
   props: {},
   data: () => ({
-    pageNumber: 5
+    pageNumber:5
   }),
   name: "McvProductList",
   components: {McvProduct, McvPagination},
@@ -65,18 +66,24 @@ export default {
     baseUrl() {
       return this.$route.path
     },
+
     currentPage() {
+       console.log(this.$route)
+      //Number(this.pageNumber || '5')
       return Number(this.pageNumber || '5')
     },
-
   },
   methods: {
     ...mapActions(["GET_PRODUCTS_FROM_API"]),
 
+    // linkPage(){
+    //   return Number(this.$route.query.page || '5')
+    // },
     forwardPage() {
       this.pageNumber++;
     },
     prevPage() {
+
       this.pageNumber--;
     }
   },
