@@ -43,7 +43,7 @@ import {limit} from "@/helpers/vars";
 export default {
   props: {},
   data: () => ({
-    pageNumber:5
+    pageNumber: 5
   }),
   name: "McvProductList",
   components: {McvProduct, McvPagination},
@@ -68,9 +68,8 @@ export default {
     },
 
     currentPage() {
-       console.log(this.$route)
       //Number(this.pageNumber || '5')
-      return Number(this.pageNumber || '5')
+      return Number(this.$route.query.page || '5')
     },
   },
   methods: {
@@ -80,7 +79,8 @@ export default {
     //   return Number(this.$route.query.page || '5')
     // },
     forwardPage() {
-      this.pageNumber++;
+      return Number(this.$route.query.page + '1')
+      // this.pageNumber++
     },
     prevPage() {
 

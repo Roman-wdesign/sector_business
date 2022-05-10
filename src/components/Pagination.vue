@@ -1,13 +1,13 @@
 <template>
   <div class="footer">
-    <button
-        @click="prevPage"
+    <router-link
+        :to="{path: url,query:{page:`${this.currentPage -1}`}}"
         class="footer-back"
         :disabled="currentPage === 1"
 
     >
       Назад
-    </button>
+    </router-link>
     <ul class="pagination">
       <li
           v-for="page in pages"
@@ -22,13 +22,14 @@
         </router-link>
       </li>
     </ul>
-    <button
-        @click="forwardPage"
+    <router-link
         class="footer-forward"
-        :disabled="pageNumber >= this.pages.length"
+        :to="{path: url,query:{page:`${this.currentPage +1}`}}"
+        :disabled="currentPage >= this.pages.length"
     >
       Далее
-    </button>
+    </router-link>
+
   </div>
 </template>
 
@@ -71,9 +72,8 @@ export default {
     pages() {
       const pagesCount = Math.ceil(this.total / this.limit)
       return range(1, pagesCount)
-    },
-  }
-
+    }
+  },
 }
 </script>
 
