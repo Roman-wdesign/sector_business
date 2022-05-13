@@ -1,6 +1,16 @@
 # sector\_business
 
-Features
+### Features:
+
+* Data from API
+* table (grid)
+* search
+* sort list on @click (A-Z, Z-A, default)
+* Pagination without plugins
+* Pagination (router-link, url change, change active paginated page @click)
+* Paginated buttons (\<router-link>)
+
+
 
 ## Project setup
 
