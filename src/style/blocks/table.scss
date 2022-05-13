@@ -16,7 +16,7 @@
   color: #ffffff;
   box-shadow: 0 4px 27px rgba(230, 231, 234, 0.78);
 
-  &__id, &__header, &__description{
+  &__id{
     @include flex_table;
   }
 }

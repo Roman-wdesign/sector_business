@@ -1,10 +1,11 @@
 <template>
   <div class="footer">
-    <router-link
-        :to="{path: url,query:{page:`${this.currentPage -1}`}}"
-        class="footer-back"
-        :disabled="currentPage === 1"
 
+    <router-link
+        :to="{path: url,query:{page:goPrev}}"
+        class="footer-back"
+        :disabled="!stopPrev"
+        :event="stopPrev ? 'click' : ''"
     >
       Назад
     </router-link>
@@ -22,27 +23,26 @@
         </router-link>
       </li>
     </ul>
+
     <router-link
         class="footer-forward"
-        :to="{path: url,query:{page:`${this.currentPage +1}`}}"
-        :disabled="currentPage >= this.pages.length"
+        :to="{path: url,query:{page:this.goForward}}"
+        :disabled="!stopForward"
+        :event="stopForward ? 'click' : ''"
     >
       Далее
     </router-link>
-
   </div>
 </template>
 
 <script>
 import {range} from "@/helpers/utils";
+import {step} from "@/helpers/vars";
 
 export default {
   name: "McvPagination",
+  data: () => ({isDisabled: true}),
   props: {
-    pageNumber: {
-      type: Number,
-      required: true
-    },
     total: {
       type: Number,
       required: true
@@ -60,18 +60,26 @@ export default {
       required: true
     }
   },
-  methods: {
-    forwardPage() {
-      this.$emit('forwardPage')
-    },
-    prevPage() {
-      this.$emit('prevPage')
-    }
-  },
+  methods: {},
   computed: {
+    step() {
+      return step
+    },
     pages() {
       const pagesCount = Math.ceil(this.total / this.limit)
       return range(1, pagesCount)
+    },
+    goForward() {
+      return `${this.currentPage + this.step}`
+    },
+    goPrev() {
+      return `${this.currentPage - this.step}`
+    },
+    stopForward() {
+      return this.currentPage + 1 <= this.pages.length
+    },
+    stopPrev() {
+      return this.currentPage >= 2
     }
   },
 }

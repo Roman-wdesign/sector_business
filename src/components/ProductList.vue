@@ -1,35 +1,40 @@
 <template>
   <div>
-
-    <div>
-      <div class="table">
-        <div class="table__id">ID
-          <div class="arrow"></div>
-        </div>
-        <div class="table__header">Заголовок
-          <div class="arrow"></div>
-        </div>
-        <div class="table__description">Описание
-          <div class="arrow"></div>
-        </div>
-      </div>
-
-      <mcv-product
-          v-for="(product, index) in paginatedData"
-          :product_data="product"
-          :key="index"
-      />
-      <mcv-pagination
-
-          :page-number="pageNumber"
-          :total="totalPages"
-          :limit="limit"
-          :current-page="currentPage"
-          :url="baseUrl"
-          @forwardPage="forwardPage"
-          @prevPage="prevPage"
-      />
+    <div class="search">
+      <input
+          v-model="search"
+          type="text"
+          class="search__input"
+          placeholder="Поиск"
+      >
     </div>
+    <div>
+      <ul class="table">
+        <li
+            class="table__id"
+            v-for="sortItem in  Object.keys(orderedListOptions)"
+            :key="sortItem"
+            @click="sortOrder = sortItem"
+            :class="{active: sortOrder === sortItem}"
+        >
+
+          {{ sortItem }}
+          <div class="arrow"></div>
+        </li>
+
+      </ul>
+    </div>
+    <mcv-product
+        v-for="(product, index) in filteredList"
+        :product_data="product"
+        :key="index"
+    />
+    <mcv-pagination
+        :total="totalPages"
+        :limit="limit"
+        :current-page="currentPage"
+        :url="baseUrl"
+    />
   </div>
 </template>
 
@@ -43,18 +48,56 @@ import {limit} from "@/helpers/vars";
 export default {
   props: {},
   data: () => ({
-    pageNumber: 5
+    search:'',
+    sortOrder: "ID",
   }),
   name: "McvProductList",
   components: {McvProduct, McvPagination},
+  methods: {
+    ...mapActions(["GET_PRODUCTS_FROM_API"]),
+
+    sortedArray(sortOrder) {
+      return this.orderedListOptions[sortOrder]()
+    }
+  },
   computed: {
     ...mapGetters([
       'PRODUCTS'
     ]),
+    filteredList (){
+      return this.sortedArray(this.sortOrder).filter(product => {
+        return product.title.toLowerCase().includes(this.search.toLowerCase())
+      })
+    },
+    orderedListOptions: function () {
+      return {
+        "ID": () => {
+          //Default
+          return this.paginatedData
+        },
+        "Заголовок": () => {
+          //A-Z
+          return this.paginatedData.slice().sort(
+              function (a, b) {
+                if (a.title > b.title) {
+                  return 1;
+                }
+                if (a.title < b.title) {
+                  return -1;
+                }
+                return 0;
+              }
+          )
+        },
+        "Описание": () => {
+          //Z-A
+          return this.paginatedData.slice().sort().reverse()
+        },
+      }
+    },
     totalPages() {
       return this.PRODUCTS.length;
     },
-
     paginatedData() {
       let start = (this.currentPage - 1) * limit;
       let end = start + this.limit;
@@ -68,26 +111,9 @@ export default {
     },
 
     currentPage() {
-      //Number(this.pageNumber || '5')
-      return Number(this.$route.query.page || '5')
+      return Number(this.$route.query.page || '1')
     },
   },
-  methods: {
-    ...mapActions(["GET_PRODUCTS_FROM_API"]),
-
-    // linkPage(){
-    //   return Number(this.$route.query.page || '5')
-    // },
-    forwardPage() {
-      return Number(this.$route.query.page + '1')
-      // this.pageNumber++
-    },
-    prevPage() {
-
-      this.pageNumber--;
-    }
-  },
-
   mounted() {
     this.GET_PRODUCTS_FROM_API();
   },
