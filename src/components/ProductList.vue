@@ -9,9 +9,9 @@
       >
     </div>
     <div>
-      <ul class="table">
+      <ul class="myTable">
         <li
-            class="table__id"
+            class="myTable__id"
             v-for="sortItem in  Object.keys(orderedListOptions)"
             :key="sortItem"
             @click="sortOrder = sortItem"

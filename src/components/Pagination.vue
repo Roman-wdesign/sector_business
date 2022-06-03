@@ -13,11 +13,11 @@
       <li
           v-for="page in pages"
           class="pagination__item"
-          :class="{active: currentPage === page}"
           :key="page"
       >
         <router-link
             class="pagination__link"
+            :class="{active: currentPage === page}"
             :to="{path: url, query:{page:page}}">
           {{ page }}
         </router-link>

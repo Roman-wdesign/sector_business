@@ -4,6 +4,7 @@
       <div class="header">
       </div>
       <div class="content">
+        <h1>Main Header</h1>
         <mcv-product-list/>
       </div>
     </div>

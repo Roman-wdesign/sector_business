@@ -1,4 +1,6 @@
-.table {
+.myTable {
+
+
   @include Roboto_600_SemiBold;
 
   display: flex;
@@ -10,13 +12,13 @@
   max-width: 1077px;
 
   height: 57px;
-  padding: 0  211px 0 23px;
+  padding: 0 211px 0 23px;
 
   background-color: $header_background;
   color: #ffffff;
   box-shadow: 0 4px 27px rgba(230, 231, 234, 0.78);
 
-  &__id{
+  &__id {
     @include flex_table;
   }
 }

@@ -7,7 +7,9 @@
   justify-content: space-between;
 }
 
-.footer-forward ,.footer-back{
+.footer-forward, .footer-back {
+  color: $search_background;
+  text-decoration: none;
   @include button_style;
 }
 
@@ -15,18 +17,21 @@
   display: table;
 
   &__item {
-    :hover{
-      color:$search_background;
+    :hover {
+      color: $search_background;
     }
+
     display: table-cell;
     padding: 0 3px;
   }
 
   &__link {
+    color: $search_background;
+    text-decoration: none;
     @include Roboto_500_Medium;
   }
 }
 
-.active{
-color:$pagination_active_color;
+.active {
+  color: #198754;
 }
