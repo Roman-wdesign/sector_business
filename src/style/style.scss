@@ -4,26 +4,68 @@
 @import "modules/fonts";
 @import "modules/mixins";
 
-
 @import "blocks/search";
 @import "blocks/item";
 @import "blocks/table";
 @import "blocks/arrow";
 @import "blocks/pagination";
-@import "landing/homeContainer";
+@import "blocks/home";
 
 @import '~bootstrap/scss/bootstrap';
 
 
 //@import "../../node_modules/bootstrap/scss/reboot";
+
 //@import "../../node_modules/bootstrap/scss/functions";
 //@import "../../node_modules/bootstrap/scss/variables";
 //@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
 //@import "../../node_modules/bootstrap/scss/mixins/container";
 //@import "../../node_modules/bootstrap/scss/mixins/grid";
 
-.container{
+.container {
   @include make-container();
+  max-width: 1400px;
+}
+
+.my-row {
+  @include make-row();
+
+  & > * {
+    @include make-col-ready();
+  }
+}
+
+.header {
+  @extend .my-row;
+
+  &__logo-wrap {
+    @include make-col(1);
+
+  }
+
+  &__links-col {
+    @include make-col(5);
+  }
+
+  &__block {
+    @extend .my-row;
+
+    &_image {
+      @include make-col(4);
+    }
+    &_button{
+      @include make-col(2);
+    }
+  }
+}
+.main{
+  @extend .my-row;
+  &__header{
+    @include make-col(6);
+  }
+  &__rectangle{
+    @include make-col(2);
+  }
 }
 
 //кол-во колонок
@@ -52,24 +94,25 @@ $container-max-widths: (
 );
 
 
-
-.land{
-  max-width: 1440px;
+.land {
+  max-width: 1400px;
   margin: 0 auto;
   padding: 23px 0 12px 0;
   display: flex;
   justify-content: center;
 }
 
-.wrap{
-  display:flex;
+.wrap {
+  display: flex;
   flex-direction: column;
 
 }
-.myLinkStyle{
-  padding:  3rem 0 3rem 0;
+
+.myLinkStyle {
+  padding: 3rem 0 3rem 0;
 
 }
-.mainPage{
+
+.mainPage {
   text-align: center;
 }

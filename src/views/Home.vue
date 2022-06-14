@@ -1,49 +1,62 @@
 <template>
   <div>
     <div class="container">
-      <header class="home">
-        <div class="home__header">
-          <button class="btn btn-primary">Click</button>
-          <div class="home__logo"></div>
-          <div class="home__links">
 
-            <router-link
-                class="home__links_route"
-                :to="{name: 'start'}"
-            >Home
-            </router-link>
+      <header class="header">
 
-            <router-link
-                class="home__links_route"
-                :to="{name: 'start'}"
-            >How it works
-            </router-link>
-
-            <router-link
-                class="home__links_route"
-                :to="{name: 'start'}"
-            >Services
-            </router-link>
-
-            <router-link
-                class="home__links_route"
-                :to="{name: 'start'}"
-            >Roadmap
-            </router-link>
-          </div>
+        <div class="header__logo-wrap">
+          <div class="header__logo"></div>
         </div>
-        <h1>Discover Rare
-          Collections Of
-          Art & NFT’s</h1>
-        <div class="myLinkStyle"></div>
+        <div class="header__links-col">
+
+          <router-link
+              class="header__links-route"
+              :to="{name: 'start'}"
+          >Home
+          </router-link>
+
+          <router-link
+              class="header__links-route"
+              :to="{name: 'start'}"
+          >How it works
+          </router-link>
+
+          <router-link
+              class="header__links-route"
+              :to="{name: 'start'}"
+          >Services
+          </router-link>
+
+          <router-link
+              class="header__links-route"
+              :to="{name: 'start'}"
+          >Roadmap
+          </router-link>
+        </div>
+
+
       </header>
+      <div class="header__block">
+        <div class="header__block_image" style="width: 672px; height: 960px;"></div>
+        <button class="header__block_button">Connect Wallet</button>
+      </div>
+
+
+      <!--      <div class="myLinkStyle"></div>-->
+
 
       <section class="row gy-3">
-        <div class="col-12">
-          <div class="block">first</div>
+        <div class="main">
+          <h1 class="main__header">Discover Rare <br>
+            Collections Of <br>
+            Art & NFT’s</h1>
+          <div class="main__rectangle"></div>
         </div>
       </section>
-      <section class="row gy-3"></section>
+      <section class="row gy-3">
+        <p class="main__header-paragraph">Amet minim mollit non deserunt ullamco est sit <br> aliqua dolor do amet sint.
+        </p>
+      </section>
       <section class="row gy-3"></section>
       <section class="row gy-3"></section>
       <section class="row gy-3"></section>
