@@ -67,7 +67,12 @@
     @include make-col(2);
   }
 }
-
+.main-buttons{
+  @extend .my-row;
+  &__button{
+    @include make-col(2);
+  }
+}
 //кол-во колонок
 $grid-columns: 12;
 

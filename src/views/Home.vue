@@ -51,11 +51,16 @@
             Collections Of <br>
             Art & NFT’s</h1>
           <div class="main__rectangle"></div>
+          <p class="h4">Amet minim mollit non deserunt ullamco est sit <br> aliqua dolor do amet sint.
+          </p>
+        </div>
+        <div class="main-buttons">
+          <button class="main-buttons__button">Explore</button>
+          <button class="main-buttons__button-v2">Create</button>
         </div>
       </section>
       <section class="row gy-3">
-        <p class="main__header-paragraph">Amet minim mollit non deserunt ullamco est sit <br> aliqua dolor do amet sint.
-        </p>
+
       </section>
       <section class="row gy-3"></section>
       <section class="row gy-3"></section>
