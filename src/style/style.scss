@@ -9,6 +9,7 @@
 @import "blocks/table";
 @import "blocks/arrow";
 @import "blocks/pagination";
+@import "blocks/number";
 @import "blocks/home";
 
 @import '~bootstrap/scss/bootstrap';
@@ -72,6 +73,29 @@
   &__button{
     @include make-col(2);
   }
+}
+.price{
+  @extend .my-row;
+  &__block-image{
+    @include make-col(6);
+  }
+  &__block-list{
+    @include make-col(6);
+  }
+}
+
+
+.number{
+
+  &__row{
+    @extend .my-row;
+  }
+ &_shape{
+   @include make-col(1);
+ }
+ &_content{
+   @include make-col(6);
+ }
 }
 //кол-во колонок
 $grid-columns: 12;

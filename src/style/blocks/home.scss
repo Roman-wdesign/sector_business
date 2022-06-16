@@ -1,6 +1,6 @@
 .main {
   margin-top: 145px;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 
 
   &-buttons__button {
@@ -107,3 +107,21 @@
   }
 }
 
+.void {
+  margin-bottom: 55px;
+}
+
+.price {
+  &__block-image {
+
+    //max-width: 100%;
+    //height: auto;
+    background-image: url($img_path + "secondImg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__block-list {
+    text-align: right;
+  }
+}
