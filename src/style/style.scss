@@ -68,12 +68,12 @@
     @include make-col(2);
   }
 }
-.main-buttons{
-  @extend .my-row;
-  &__button{
-    @include make-col(2);
-  }
-}
+//.main-buttons{
+//  @extend .my-row;
+//  &__button{
+//    @include make-col(2);
+//  }
+//}
 .price{
   @extend .my-row;
   &__block-image{
@@ -82,6 +82,7 @@
   &__block-list{
     @include make-col(6);
   }
+
 }
 
 

@@ -1,13 +1,18 @@
 .main {
   margin-top: 145px;
   margin-bottom: 50px;
-
+&-buttons{
+  display:flex;
+  flex-direction:row;
+}
 
   &-buttons__button {
     font {
       size: 18px;
     }
 
+    width: 193px;
+    white-space: nowrap;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -112,16 +117,28 @@
 }
 
 .price {
+  display:flex;
+  justify-content: space-between;
+  &__header{
+    text-align: left;
+
+  }
   &__block-image {
 
     //max-width: 100%;
     //height: auto;
+    max-width: 100%;
+    height: auto;
     background-image: url($img_path + "secondImg.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &__block-list {
-    text-align: right;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //margin: 0 0 0 160px;
+    //text-align: right;
   }
 }
