@@ -1,144 +1,31 @@
 .main {
-  margin-top: 145px;
+  //margin-top: 145px;
   margin-bottom: 50px;
-&-buttons{
-  display:flex;
-  flex-direction:row;
-}
 
-  &-buttons__button {
-    font {
-      size: 18px;
-    }
-
-    width: 193px;
-    white-space: nowrap;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 15px 32px;
-    margin: 4px 12px;
-    text-align: center;
-    background: rgb(248, 39, 222);
-    color: #ffffff;
-    display: inline-block;
-    background: linear-gradient(90deg, rgba(248, 39, 222, 1) 0%, rgba(43, 20, 249, 1) 100%);
-
-    &-v2 {
-      @extend .main-buttons__button;
-      background: linear-gradient(#fff, #fff) padding-box,
-      linear-gradient(45deg, #D824E2, #5317F4) border-box;
-      border: 1px solid transparent;
-      border-radius: 8px;
-      color: #8c8c8c;
-    }
+  &-buttons {
+    display: flex;
+    flex-direction: row;
   }
 
   &__header {
-    z-index: 2;
+
     font: {
       weight: 700;
       size: 84px;
     }
-    margin-top: 155px;
-
   }
 
   &__rectangle {
+    z-index: -1;
     position: absolute;
-    top: 475px;
-    left: 320px;
+    //top: 605px;
+    //left: 320px;
     width: 400px;
     height: 36px;
     background: linear-gradient(269.43deg, #DF25E1 -10.55%, #5218F4 114.67%);
   }
 }
 
-
-.header {
-  align-items: center;
-  min-height: 90px;
-  padding-top: 50px;
-  margin-bottom: 145px;
-  //top: 5rem;
-  //min-height: 55px;
-
-
-  &__logo {
-    min-width: 53.89px;
-    min-height: 56.25px;
-    background-image: url($ico_path + "CoinEx Token (CET).svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__block {
-    &_image {
-      position: absolute;
-      top: 0;
-      right: 0;
-      max-width: 100%;
-      height: auto;
-      background-image: url($img_path + "NFT.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &_button {
-      font: {
-        weight: 700;
-      }
-      position: absolute;
-      right: 120px;
-      top: 45px;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      color: #ffffff;
-      background-color: inherit;
-      border: 2px solid #ffffff;
-      border-radius: 8px;
-    }
-  }
-
-  &__links-route {
-    color: inherit;
-    padding: 1rem;
-    text-decoration: none;
-    height: 100%;
-    border: none;
-  }
-}
-
 .void {
   margin-bottom: 55px;
-}
-
-.price {
-  display:flex;
-  justify-content: space-between;
-  &__header{
-    text-align: left;
-
-  }
-  &__block-image {
-
-    //max-width: 100%;
-    //height: auto;
-    max-width: 100%;
-    height: auto;
-    background-image: url($img_path + "secondImg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__block-list {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    //margin: 0 0 0 160px;
-    //text-align: right;
-  }
 }

@@ -11,93 +11,103 @@
 @import "blocks/pagination";
 @import "blocks/number";
 @import "blocks/home";
+@import "blocks/third";
+@import "blocks/trinity";
+@import "blocks/header";
+@import "blocks/price";
+
+@import "buttons/button";
+@import "buttons/filled";
+@import "buttons/outline";
 
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  color: white;
+  background-color: $body_color;
+}
 
-//@import "../../node_modules/bootstrap/scss/reboot";
-
-//@import "../../node_modules/bootstrap/scss/functions";
-//@import "../../node_modules/bootstrap/scss/variables";
-//@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
-//@import "../../node_modules/bootstrap/scss/mixins/container";
-//@import "../../node_modules/bootstrap/scss/mixins/grid";
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .container {
   @include make-container();
   max-width: 1400px;
 }
+//
+//.my-row {
+//  @include make-row();
+//
+//  & > * {
+//    @include make-col-ready();
+//  }
+//}
 
-.my-row {
-  @include make-row();
-
-  & > * {
-    @include make-col-ready();
-  }
-}
-
-.header {
-  @extend .my-row;
-
-  &__logo-wrap {
-    @include make-col(1);
-
-  }
-
-  &__links-col {
-    @include make-col(5);
-  }
-
-  &__block {
-    @extend .my-row;
-
-    &_image {
-      @include make-col(4);
-    }
-    &_button{
-      @include make-col(2);
-    }
-  }
-}
-.main{
-  @extend .my-row;
-  &__header{
-    @include make-col(6);
-  }
-  &__rectangle{
-    @include make-col(2);
-  }
-}
+//.header {
+//  @extend .my-row;
+//
+//  &__logo-wrap {
+//    @include make-col(1);
+//
+//  }
+//
+//  &__links-col {
+//    @include make-col(5);
+//  }
+//
+//  &__block {
+//    @extend .my-row;
+//
+//    &_image {
+//      @include make-col(4);
+//    }
+//    &_button{
+//      @include make-col(2);
+//    }
+//  }
+//}
+//.main{
+//  @extend .my-row;
+//  &__header{
+//    @include make-col(6);
+//  }
+//  &__rectangle{
+//    @include make-col(2);
+//  }
+//}
 //.main-buttons{
 //  @extend .my-row;
 //  &__button{
 //    @include make-col(2);
 //  }
 //}
-.price{
-  @extend .my-row;
-  &__block-image{
-    @include make-col(6);
-  }
-  &__block-list{
-    @include make-col(6);
-  }
+//.price{
+//
+//  @extend .my-row;
+//  &__block-image{
+//    @include make-col(6);
+//  }
+//  &__block-list{
+//    @include make-col(7);
+//  }
+//
+//}
 
-}
 
-
-.number{
-
-  &__row{
-    @extend .my-row;
-  }
- &_shape{
-   @include make-col(1);
- }
- &_content{
-   @include make-col(6);
- }
-}
+//.number{
+//
+//  &__row{
+//    @extend .my-row;
+//  }
+// &_shape{
+//   @include make-col(1);
+// }
+// &_content{
+//   @include make-col(6);
+// }
+//}
 //кол-во колонок
 $grid-columns: 12;
 
@@ -124,25 +134,25 @@ $container-max-widths: (
 );
 
 
-.land {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 23px 0 12px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.wrap {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.myLinkStyle {
-  padding: 3rem 0 3rem 0;
-
-}
-
-.mainPage {
-  text-align: center;
-}
+//.land {
+//  max-width: 1400px;
+//  margin: 0 auto;
+//  padding: 23px 0 12px 0;
+//  display: flex;
+//  justify-content: center;
+//}
+//
+//.wrap {
+//  display: flex;
+//  flex-direction: column;
+//
+//}
+//
+//.myLinkStyle {
+//  padding: 3rem 0 3rem 0;
+//
+//}
+//
+//.mainPage {
+//  text-align: center;
+//}

@@ -1,0 +1,36 @@
+.header__block_button {
+
+  @extend .button;
+  position: absolute;
+  right: 120px;
+  top: 45px;
+
+
+  color: #ffffff;
+  background-color: inherit;
+  border: 2px solid #ffffff;
+
+
+  &:hover {
+    color: #D824E2;
+    background: #ffffff;
+  }
+}
+
+.main-buttons__button-v2 {
+  @extend .button;
+  background: linear-gradient($body_color, $body_color) padding-box,
+  linear-gradient(45deg, #D824E2, #5317F4) border-box;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #ffffff;
+  transition-timing-function: cubic-bezier(0, 0, .58, 1);
+
+
+  &:hover {
+    color: #D824E2;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+  }
+
+}

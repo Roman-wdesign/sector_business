@@ -1,6 +1,6 @@
 <template>
   <div class="land">
-    <div class="wrap">
+    <div class="wrap" style="background-color: white">
       <div class="header">
       </div>
       <div class="content">

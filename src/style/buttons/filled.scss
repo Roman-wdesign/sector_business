@@ -1,0 +1,19 @@
+.main-buttons__button {
+
+  @extend .button;
+
+  color: #ffffff;
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(248, 39, 222, 1) 0%, rgba(43, 20, 249, 1) 100%);
+
+  transition: linear-gradient 2s;
+  transition-timing-function: cubic-bezier(.17, .67, .43, .16);
+
+  &:hover {
+    background: rgb(248, 39, 222);
+    transition: linear-gradient 2s;
+    transition-timing-function: cubic-bezier(0, 0, .58, 1);
+  }
+
+
+}
