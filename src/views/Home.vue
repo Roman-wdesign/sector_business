@@ -153,7 +153,7 @@
 
 
 
-      <section class="row gy-3 ">
+      <section class="trinity_img row gy-3"  style="margin-bottom: 90px">
         <div class="col ">
           <img
             src="../assets/img/trinityWoman.png"
@@ -175,11 +175,42 @@
             alt="trinityNoname"
           />
         </div>
+
       </section>
 
 
 
-      <section class="row gy-3"></section>
+      <section class="row gy-3  d-flex justify-content-center" >
+        <div class="col-10 d-flex justify-content-center">
+          <div class="price__block-list d-flex justify-content-center" >
+            <h2 class="price__header d-flex justify-content-center">
+              400 NFTs
+            </h2>
+            <div class="number" style="margin-bottom: 85px; margin-top: 50px">
+              <div class="number__row">
+                <div class="number_shape"><p class="number_figure">1</p></div>
+                <div class="number_content">
+                  1 Acre of land +4000 sq feet metaverse house
+                </div>
+              </div>
+              <div class="number__row">
+                <div class="number_shape"><p class="number_figure">1</p></div>
+                <div class="number_content">
+                  Walk around your house and land on the metaverse
+                </div>
+              </div>
+              <div class="number__row">
+                <div class="number_shape"><p class="number_figure">1</p></div>
+                <div class="number_content">
+                  Invite friends to your house and sell your house on opensea                </div>
+              </div>
+            </div>
+            <div class="main-buttons d-flex justify-content-center">
+              <button class="main-buttons__button">Connect Wallet</button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="row gy-3"></section>
       <section class="row gy-3"></section>
     </div>
