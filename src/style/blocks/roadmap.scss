@@ -1,0 +1,21 @@
+.roadmap {
+  &_shell {
+    padding: 40px;
+    background: rgba(218, 37, 226, 0.2);
+    border-radius: 14px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+
+    &:not(:last-child) {
+
+      margin-bottom: 37px;
+    }
+  }
+
+}
