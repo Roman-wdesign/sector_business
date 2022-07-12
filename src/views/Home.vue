@@ -1,25 +1,29 @@
 <template>
   <div>
     <div class="container">
-      <div class="row header">
-        <div class="col-1 header__logo">
+      <header class="row header">
 
-        </div>
-        <div class="col-1">
+        <router-link class="col-1 logo__router" :to="{ name: 'start' }"
+        >
+          <div class="header__logo"></div>
+        </router-link>
+
+        <div class="col-1  d-none d-lg-block">
           <router-link class="header__links-route" :to="{ name: 'start' }"
           >Home
           </router-link>
         </div>
-        <div class="col-2">
+        <div class="col-2  d-none d-lg-block">
           <router-link class="header__links-route" :to="{ name: 'start' }"
           >How it works
           </router-link>
         </div>
-        <div class="col-1">
+        <div class="col-1  d-none d-lg-block">
           <router-link class="header__links-route" :to="{ name: 'start' }"
           >Services
           </router-link>
         </div>
+
         <div class="col">
           <img
               src="../assets/img/NFT.png"
@@ -30,9 +34,9 @@
             Connect Wallet
           </button>
         </div>
-      </div>
+      </header>
       <section class="row gy-3" style="margin-bottom: 250px">
-        <div class="col-7">
+        <div class="col-lg-7">
           <div class="main position-relative">
             <h1 class="main__header">
               Discover Rare <br/>
@@ -65,7 +69,7 @@
           />
         </div>
         <div class="col-4 d-flex justify-content-between">
-          <div class="price__block-list">
+          <div class="price__block-list d-flex flex-column justify-content-between">
             <h2 class="price__header">
               1 cr of land mint price<br/>
               3000 NFT’s
@@ -102,7 +106,7 @@
           style="margin-bottom: 150px"
       >
         <div class="col-4 d-flex justify-content-between">
-          <div class="price__block-list">
+          <div class="price__block-list d-flex flex-column justify-content-between">
             <h2 class="price__header">
               1 cr of land mint price<br/>
               3000 NFT’s
@@ -177,7 +181,7 @@
 
       <section class="row gy-3  d-flex justify-content-center" style="margin-bottom: 150px">
         <div class="col-10 d-flex justify-content-center">
-          <div class="price__block-list d-flex justify-content-center">
+          <div class="price__block-list d-flex justify-content-center flex-column">
             <h2 class="price__header d-flex justify-content-center">
               400 NFTs
             </h2>
@@ -214,7 +218,7 @@
           style="margin-bottom: 150px"
       >
         <div class="col-4 d-flex justify-content-between">
-          <div class="price__block-list">
+          <div class="price__block-list d-flex flex-column justify-content-between">
             <h2 class="price__header">
               1 acre + 4000 Square<br>
               ft land metaverse house
@@ -254,12 +258,12 @@
       </section>
 
 
-      <section class="roadmap d-flex justify-content-evenly row gy-5  " >
+      <section class="roadmap d-flex justify-content-evenly row gy-5" style="margin-bottom: 150px">
         <h1 class="price__header d-flex justify-content-center mb-5">
           Roadmap
         </h1>
         <div class="col-4">
-          <div class="roadmap_shell  mb-5" >
+          <div class="roadmap_shell  mb-5">
             <div class="roadmap__row">
               <div class="number_shape"><p class="number_figure">1</p></div>
               <div class="number_content1">
@@ -267,7 +271,7 @@
                 mansion holders
               </div>
             </div>
-            <div class="roadmap__row" >
+            <div class="roadmap__row">
               <div class="number_shape"><p class="number_figure">2</p></div>
               <div class="number_content1">
                 Launch our own crypto token<br>
@@ -275,7 +279,7 @@
               </div>
             </div>
           </div>
-          <div class="roadmap_shell" >
+          <div class="roadmap_shell">
             <div class="number__row d-flex flex-row">
               <div class="number_shape"><p class="number_figure">5</p></div>
               <div class="number_content1">
@@ -294,7 +298,7 @@
         </div>
 
         <div class="col-4 pt-5">
-          <div class="roadmap_shell d-flex flex-column justify-content-center  mb-5" >
+          <div class="roadmap_shell d-flex flex-column justify-content-center  mb-5">
             <div class="number__row d-flex flex-row">
               <div class="number_shape"><p class="number_figure">3</p></div>
               <div class="number_content1">
@@ -302,7 +306,7 @@
                 mansion holders
               </div>
             </div>
-            <div class="number__row d-flex flex-row" >
+            <div class="number__row d-flex flex-row">
               <div class="number_shape"><p class="number_figure">4</p></div>
               <div class="number_content1">
                 Launch our own crypto token<br>
@@ -310,7 +314,7 @@
               </div>
             </div>
           </div>
-          <div class="roadmap_shell  " >
+          <div class="roadmap_shell  ">
             <div class="number__row d-flex flex-row">
               <div class="number_shape"><p class="number_figure">7</p></div>
               <div class="number_content1">
@@ -331,9 +335,85 @@
       </section>
 
 
-      <section class="row gy-3">
-
+      <section class="row d-flex justify-content-between gy-3" style="margin-bottom: 100px">
+        <h1 class="price__header d-flex justify-content-center mb-5">
+          Mansion Battles Game
+        </h1>
+        <div class="col-4">
+          <img
+              src="../assets/img/johnDoe.png"
+              class="price__block-image  img-fluid"
+              alt="secondImg"
+          />
+        </div>
+        <div class="col-4 d-flex justify-content-between">
+          <div class="price__block-list d-flex flex-column justify-content-evenly">
+            <h1 class="price__header">
+              *Coming Soon*
+            </h1>
+            <div class="number">
+              <div class="number__row">
+                <div class="number_shape"><p class="number_figure">1</p></div>
+                <div class="number_content">
+                  10 Acre of digoital land
+                </div>
+              </div>
+              <div class="number__row">
+                <div class="number_shape"><p class="number_figure">2</p></div>
+                <div class="number_content">
+                  Walk around your land on the metaverse
+                </div>
+              </div>
+              <div class="number__row">
+                <div class="number_shape"><p class="number_figure">3</p></div>
+                <div class="number_content">
+                  Build Mansion on your land
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <footer class="row footer">
+
+          <router-link class="col-1 logo__router" :to="{ name: 'start' }"
+          >
+            <div class="footer__logo" ></div>
+          </router-link>
+
+        <div class="col-1">
+          <router-link class="header__links-route" :to="{ name: 'start' }"
+          >Privacy
+          </router-link>
+        </div>
+        <div class="col-1">
+          <router-link class="header__links-route" :to="{ name: 'start' }"
+          >Terms
+          </router-link>
+        </div>
+        <div class="col-2">
+          <router-link class="header__links-route" :to="{ name: 'start' }"
+          >Contact Us
+          </router-link>
+        </div>
+        <div class="col-2">
+          <div class="footer__shapes">
+            <div class="footer_shape m-2">
+              <router-link class="header__links-route" :to="{ name: 'start' }"
+              >
+                <div class="footer__logo_society"></div>
+              </router-link>
+
+            </div>
+            <div class="footer_shape m-2">
+              <router-link class="header__links-route" :to="{ name: 'start' }"
+              >
+                <div class="footer__logo_society_2"></div>
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </div>
 </template>
