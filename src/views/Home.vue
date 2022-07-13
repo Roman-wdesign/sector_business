@@ -1,12 +1,47 @@
 <template>
   <div>
     <div class="container">
-      <header class="row header">
+      <header class="row header ">
 
         <router-link class="col-1 logo__router" :to="{ name: 'start' }"
         >
           <div class="header__logo"></div>
         </router-link>
+
+
+        <div class="col d-lg-none d-md-block d-sm-block d-xs-block">
+          <div id="sidemenu">
+            <button class="sidemenu__btn " v-on:click="navOpen=!navOpen" v-bind:class="{active:navOpen}">
+              <span class="top"></span>
+              <span class="mid"></span>
+              <span class="bottom"></span>
+            </button>
+            <transition name="translateX">
+              <nav v-show="navOpen">
+                <div class="sidemenu__wrapper">
+                  <ul class="sidemenu__list">
+                    <li class="sidemenu__item">
+                      <router-link class="header__links-route" :to="{ name: 'start' }"
+                      >Home
+                      </router-link>
+                    </li>
+                    <li class="sidemenu__item">
+                      <router-link class="header__links-route" :to="{ name: 'start' }"
+                      >How it works
+                      </router-link>
+                    </li>
+                    <li class="sidemenu__item">
+                      <router-link class="header__links-route" :to="{ name: 'start' }"
+                      >Services
+                      </router-link>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </transition>
+          </div>
+        </div>
+
 
         <div class="col-1  d-none d-lg-block">
           <router-link class="header__links-route" :to="{ name: 'start' }"
@@ -30,11 +65,13 @@
               class="header__block_image img-fluid position-absolute top-0 end-0"
               alt="NFT"
           />
-          <button type="button" class="header__block_button position-absolute">
+          <button type="button" class="header__block_button d-none d-lg-block position-absolute">
             Connect Wallet
           </button>
         </div>
       </header>
+
+
       <section class="row gy-3" style="margin-bottom: 250px">
         <div class="col-lg-7">
           <div class="main position-relative">
@@ -376,10 +413,10 @@
       </section>
       <footer class="row footer">
 
-          <router-link class="col-1 logo__router" :to="{ name: 'start' }"
-          >
-            <div class="footer__logo" ></div>
-          </router-link>
+        <router-link class="col-1 logo__router" :to="{ name: 'start' }"
+        >
+          <div class="footer__logo"></div>
+        </router-link>
 
         <div class="col-1">
           <router-link class="header__links-route" :to="{ name: 'start' }"
@@ -422,7 +459,10 @@
 export default {
   name: "McvHome",
 
-  data: () => ({}),
+  data: () => ({
+    navOpen: false,
+  }),
+  methods: {}
 };
 </script>
 
