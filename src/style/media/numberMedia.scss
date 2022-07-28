@@ -1,0 +1,22 @@
+.number{
+  @media (min-width: 0px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 576px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 768px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

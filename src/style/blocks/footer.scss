@@ -8,12 +8,6 @@
   }
 
   &__logo {
-    min-width: 83.19px;
-    min-height: 86.83px;
-    background-image: url($ico_path + "tokenLogo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-
     &_society {
       padding: 0;
       margin: 0;
@@ -34,7 +28,6 @@
   }
 
   &_shape {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,11 +35,15 @@
     width: 52px;
     height: 52px;
 
-    background: linear-gradient(135.83deg, rgba(216, 227, 255, 0.2) 11.5%, rgba(255, 245, 238, 0.102) 83.39%);
+    background: linear-gradient(
+      135.83deg,
+      rgba(216, 227, 255, 0.2) 11.5%,
+      rgba(255, 245, 238, 0.102) 83.39%
+    );
     backdrop-filter: blur(4px);
     border-radius: 14px;
 
-    &:hover{
+    &:hover {
       background: rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(1px);
     }

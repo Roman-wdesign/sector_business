@@ -11,7 +11,6 @@
           >Go to Home
           </router-link>
         </div>
-
         <mcv-product-list/>
       </div>
     </div>

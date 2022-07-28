@@ -1,31 +1,12 @@
+@import "~bootstrap/scss/bootstrap-grid";
+
 .main {
-  //margin-top: 145px;
   margin-bottom: 50px;
 
-  &-buttons {
-    display: flex;
-    flex-direction: row;
-  }
-
-  &__header {
-
-    font: {
-      weight: 700;
-      size: 84px;
-    }
-  }
-
   &__rectangle {
+    width: 15.625rem;
+    height: 2.25rem;
+    background: linear-gradient(269.43deg, #df25e1 -10.55%, #5218f4 114.67%);
     z-index: -1;
-    position: absolute;
-    //top: 605px;
-    //left: 320px;
-    width: 400px;
-    height: 36px;
-    background: linear-gradient(269.43deg, #DF25E1 -10.55%, #5218F4 114.67%);
   }
-}
-
-.void {
-  margin-bottom: 55px;
 }

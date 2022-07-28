@@ -1,16 +1,7 @@
 .price {
-    &__block-image {
-      max-width: 432px;
-      height: auto;
-      //max-width: 100%;
-      //height: auto;
-      //background-image: url($img_path + "secondImg.png");
-      //background-repeat: no-repeat;
-      //background-position: center;
-    }
-    &__block-list {
-      //display:flex;
-      //flex-direction: column;
-      //justify-content: space-between;
-    }
+
+  &__block-image {
+    max-width: 432px;
+    height: auto;
   }
+}

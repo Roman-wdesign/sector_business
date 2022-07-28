@@ -6,9 +6,7 @@
 
 <script>
 export default {
-  name: "McvApp",
-  mounted() {
-  }
+  name: "McvApp"
 }
 </script>
 
