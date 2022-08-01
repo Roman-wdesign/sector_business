@@ -1,5 +1,13 @@
 .great {
   margin-bottom: 150px;
+  @media (min-width: 0px) {
+
+    margin-bottom: 1200px;
+  }
+  @media (min-width: 576px) {
+
+    margin-bottom: 1000px;
+  }
   @media (min-width: 768px) {
 
     margin-bottom: 1200px;

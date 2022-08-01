@@ -102,7 +102,7 @@
               </p>
             </div>
 
-            <div class="main-buttons d-flex flex-row">
+            <div class="main-buttons">
               <button class="main-buttons__button">Explore</button>
               <button class="main-buttons__button-v2">Create</button>
             </div>
@@ -125,7 +125,7 @@
         </div>
         <div class="col-md-6 col-lg-4 d-flex justify-content-between">
           <div
-            class="price__block-list d-flex flex-column justify-content-between"
+            class="price__block-list"
           >
             <h2 class="price__header">
               1 cr of land mint price<br />
@@ -164,7 +164,7 @@
       >
         <div class="col-md-6 col-lg-4 d-flex justify-content-between">
           <div
-            class="price__block-list d-flex flex-column justify-content-between"
+            class="price__block-list"
           >
             <h2 class="price__header">
               1 cr of land mint price<br />
@@ -278,7 +278,7 @@
       >
         <div class="col-md-6 col-lg-4 d-flex justify-content-between">
           <div
-            class="price__block-list d-flex flex-column justify-content-between"
+            class="price__block-list"
           >
             <h2 class="price__header">
               1 acre + 4000 Square<br />
@@ -461,7 +461,7 @@
             >Contact Us
           </router-link>
         </div>
-        <div class="col-2">
+        <div class="col-md-4 col-lg-2">
           <div class="footer__shapes">
             <div class="footer_shape m-2">
               <router-link class="header__links-route" :to="{ name: 'start' }">

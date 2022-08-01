@@ -2,15 +2,15 @@
 
 .main {
   margin-bottom: 50px;
-  &__content {
+  &-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+    &__content {
     margin: 0 0 0 12px;
   }
   &__rectangle {
-    width: 15.625rem;
-    height: 2.25rem;
-
     background: linear-gradient(269.43deg, #df25e1 -10.55%, #5218f4 114.67%);
-
     z-index: -1;
   }
 }
