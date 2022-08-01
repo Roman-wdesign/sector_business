@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <header class="row header pt-5" style="margin-bottom: 150px">
+      <header class="header row  pt-5">
         <router-link class="col-1 logo__router" :to="{ name: 'start' }">
           <img
             src="../assets/svg/tokenLogo.svg"
@@ -10,7 +10,7 @@
           />
         </router-link>
 
-        <div class="col d-lg-none d-md-block d-sm-block d-xs-block">
+        <div class="col d-sm-block d-xs-block d-md-block d-lg-none">
           <div id="sidemenu">
             <button
               class="sidemenu__btn"
@@ -84,21 +84,19 @@
         </div>
       </header>
 
-      <section class="row gy-3" style="margin-bottom: 300px">
+      <section class="row great gy-3">
         <div class="col">
           <div class="main">
-            <div class="main__content" style="margin: 0 0 0 12px">
-              <div class="div position-relative">
+            <div class="main__content">
+              <div class="main__content_header position-relative">
                 <h1 class="display-1 fw-bold">
                   Discover Rare <br />
                   Collections Of <br />
                   Art & NFT’s
                 </h1>
-                <div
-                  class="main__rectangle position-absolute bottom-0 start-0"
-                ></div>
+                <div class="main__rectangle"></div>
               </div>
-              <p class="h4" style="margin: 55px 0">
+              <p class="main__content_text h4" style="margin: 55px 0">
                 Amet minim mollit non deserunt ullamco est sit <br />
                 aliqua dolor do amet sint.
               </p>
@@ -112,6 +110,8 @@
         </div>
       </section>
 
+
+
       <section
         class="row gy-3 d-flex justify-content-between"
         style="margin-bottom: 150px"
@@ -123,7 +123,7 @@
             alt="secondImg"
           />
         </div>
-        <div class="col-4 d-flex justify-content-between">
+        <div class="col-md-6 col-lg-4 d-flex justify-content-between">
           <div
             class="price__block-list d-flex flex-column justify-content-between"
           >
@@ -162,7 +162,7 @@
         class="row gy-3 d-flex justify-content-between"
         style="margin-bottom: 150px"
       >
-        <div class="col-4 d-flex justify-content-between">
+        <div class="col-md-6 col-lg-4 d-flex justify-content-between">
           <div
             class="price__block-list d-flex flex-column justify-content-between"
           >
@@ -276,7 +276,7 @@
         class="row gy-3 d-flex justify-content-between"
         style="margin-bottom: 150px"
       >
-        <div class="col-4 d-flex justify-content-between">
+        <div class="col-md-6 col-lg-4 d-flex justify-content-between">
           <div
             class="price__block-list d-flex flex-column justify-content-between"
           >
@@ -325,7 +325,7 @@
         <h1 class="price__header d-flex justify-content-center mb-5">
           Roadmap
         </h1>
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="roadmap_shell mb-5">
             <div class="roadmap__row">
               <div class="number_shape"><p class="number_figure">1</p></div>
@@ -360,7 +360,7 @@
           </div>
         </div>
 
-        <div class="col-4 pt-5">
+        <div class="col-md-6 col-lg-4 pt-5">
           <div
             class="roadmap_shell d-flex flex-column justify-content-center mb-5"
           >
@@ -402,6 +402,7 @@
         class="row d-flex justify-content-between gy-3"
         style="margin-bottom: 100px"
       >
+
         <h1 class="price__header d-flex justify-content-center mb-5">
           Mansion Battles Game
         </h1>
@@ -412,7 +413,7 @@
             alt="secondImg"
           />
         </div>
-        <div class="col-4 d-flex justify-content-between">
+        <div class="col-md-6 col-lg-4 d-flex justify-content-between">
           <div
             class="price__block-list d-flex flex-column justify-content-evenly"
           >
@@ -420,7 +421,7 @@
             <div class="number">
               <div class="number__row">
                 <div class="number_shape"><p class="number_figure">1</p></div>
-                <div class="number_content">10 Acre of digoital land</div>
+                <div class="number_content">10 Acre of digital land</div>
               </div>
               <div class="number__row">
                 <div class="number_shape"><p class="number_figure">2</p></div>

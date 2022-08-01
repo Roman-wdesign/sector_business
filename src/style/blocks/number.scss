@@ -18,8 +18,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
     margin-right: 1rem;
 
     background: linear-gradient(
@@ -28,7 +26,7 @@
       rgba(87, 24, 243, 0.2) 110.24%,
       rgba(255, 245, 238, 0.2) 110.24%
     );
-    border-radius: 0.875rem;
+
   }
 
   &_content {
