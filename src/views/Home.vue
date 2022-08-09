@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <header class="header row  pt-5">
+      <header class="header row pt-5">
         <router-link class="col-1 logo__router" :to="{ name: 'start' }">
           <img
             src="../assets/svg/tokenLogo.svg"
@@ -96,10 +96,10 @@
                 </h1>
                 <div class="main__rectangle"></div>
               </div>
-              <p class="main__content_text h4" style="margin: 55px 0">
+              <h4 class="main__content_text">
                 Amet minim mollit non deserunt ullamco est sit <br />
                 aliqua dolor do amet sint.
-              </p>
+              </h4>
             </div>
 
             <div class="main-buttons">
@@ -110,23 +110,19 @@
         </div>
       </section>
 
-
-
       <section
-        class="row gy-3 d-flex justify-content-between"
+        class="row first-section xs-wrap sm-wrap md-nowrap gy-3"
         style="margin-bottom: 150px"
       >
-        <div class="col-4">
+        <div class="col-sm-8 col-md-4">
           <img
             src="../assets/img/secondImg.png"
             class="price__block-image img-fluid"
             alt="secondImg"
           />
         </div>
-        <div class="col-md-6 col-lg-4 d-flex justify-content-between">
-          <div
-            class="price__block-list"
-          >
+        <div class="first-block col-md-6 col-lg-4">
+          <div class="price__block-list">
             <h2 class="price__header">
               1 cr of land mint price<br />
               3000 NFT’s
@@ -159,13 +155,11 @@
       </section>
 
       <section
-        class="row gy-3 d-flex justify-content-between"
+        class="row first-section xs-wrap sm-wrap md-nowrap gy-3"
         style="margin-bottom: 150px"
       >
-        <div class="col-md-6 col-lg-4 d-flex justify-content-between">
-          <div
-            class="price__block-list"
-          >
+        <div class="first-block col-md-6 col-lg-4">
+          <div class="price__block-list">
             <h2 class="price__header">
               1 cr of land mint price<br />
               3000 NFT’s
@@ -195,7 +189,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-8 col-md-4">
           <img
             src="../assets/img/thirdBlock.png"
             class="third-block-image img-fluid"
@@ -273,13 +267,11 @@
       </section>
 
       <section
-        class="row gy-3 d-flex justify-content-between"
+        class="row first-section xs-wrap sm-wrap md-nowrap gy-3"
         style="margin-bottom: 150px"
       >
-        <div class="col-md-6 col-lg-4 d-flex justify-content-between">
-          <div
-            class="price__block-list"
-          >
+        <div class="first-block col-md-6 col-lg-4">
+          <div class="price__block-list">
             <h2 class="price__header">
               1 acre + 4000 Square<br />
               ft land metaverse house
@@ -309,7 +301,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-8 col-md-4">
           <img
             src="../assets/img/androidImg.png"
             class="third-block-image img-fluid"
@@ -399,21 +391,20 @@
       </section>
 
       <section
-        class="row d-flex justify-content-between gy-3"
+        class="row first-section xs-wrap sm-wrap md-nowrap gy-3"
         style="margin-bottom: 100px"
       >
-
         <h1 class="price__header d-flex justify-content-center mb-5">
           Mansion Battles Game
         </h1>
-        <div class="col-4">
+        <div class="col-sm-8 col-md-4">
           <img
             src="../assets/img/johnDoe.png"
             class="price__block-image img-fluid"
             alt="secondImg"
           />
         </div>
-        <div class="col-md-6 col-lg-4 d-flex justify-content-between">
+        <div class="first-block col-md-6 col-lg-4">
           <div
             class="price__block-list d-flex flex-column justify-content-evenly"
           >
@@ -437,7 +428,7 @@
           </div>
         </div>
       </section>
-      <footer class="row footer">
+      <footer class="row footer xs-wrap sm-wrap md-nowrap">
         <router-link class="col-1 logo__router" :to="{ name: 'start' }">
           <img
             src="../assets/svg/tokenLogo.svg"
@@ -456,21 +447,29 @@
             >Terms
           </router-link>
         </div>
-        <div class="col-2">
+        <div class="col-sm-3 col-md-2">
           <router-link class="header__links-route" :to="{ name: 'start' }"
             >Contact Us
           </router-link>
         </div>
-        <div class="col-md-4 col-lg-2">
+        <div class="col-sm-12 col-md-4 col-lg-2 flex-wrap">
           <div class="footer__shapes">
             <div class="footer_shape m-2">
               <router-link class="header__links-route" :to="{ name: 'start' }">
-                <div class="footer__logo_society"></div>
+                <img
+                  src="../assets/svg/vector.svg"
+                  class="footer__logo_society img-fluid"
+                  alt="Social"
+                />
               </router-link>
             </div>
             <div class="footer_shape m-2">
               <router-link class="header__links-route" :to="{ name: 'start' }">
-                <div class="footer__logo_society_2"></div>
+                <img
+                  src="../assets/svg/twitter.svg"
+                  class="footer__logo_society_2 img-fluid"
+                  alt="Social2"
+                />
               </router-link>
             </div>
           </div>

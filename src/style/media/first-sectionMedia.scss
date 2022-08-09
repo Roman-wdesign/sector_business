@@ -1,0 +1,18 @@
+.first-section {
+@include responsive_section;
+}
+
+.first-block {
+  @media (min-width: 0px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: 576px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

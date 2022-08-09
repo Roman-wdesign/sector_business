@@ -1,0 +1,19 @@
+.price {
+
+  &__header{
+    @media (min-width: 0px) {
+      text-align: center;
+    }
+    @media (min-width: 576px) {
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &__block-image {
+    @include responsive_img;
+  }
+
+}

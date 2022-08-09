@@ -58,7 +58,7 @@
   align-items: center;
 }
 
-@mixin button_style{
+@mixin button_style {
   padding: 15px 32px;
   cursor: pointer;
 
@@ -69,5 +69,48 @@
   }
 
   @include Roboto_500_Medium;
+}
 
+@mixin m_p_height {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin responsive_img {
+  @media (min-width: 0px) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    max-width: 273px;
+    height: auto;
+  }
+  @media (min-width: 576px) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 273px;
+    height: auto;
+  }
+  @media (min-width: 768px) {
+    max-width: 432px;
+    height: auto;
+  }
+}
+@mixin responsive_section {
+  @media (min-width: 0px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: 576px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

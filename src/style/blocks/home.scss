@@ -6,8 +6,12 @@
     display: flex;
     flex-direction: row;
   }
-    &__content {
+  &__content {
     margin: 0 0 0 12px;
+
+  }
+  &__content_text{
+    margin: 55px 0;
   }
   &__rectangle {
     background: linear-gradient(269.43deg, #df25e1 -10.55%, #5218f4 114.67%);

@@ -1,4 +1,4 @@
 .third-block-image {
-  max-width: 432px;
-  height: auto;
+  @include responsive_img;
+
 }

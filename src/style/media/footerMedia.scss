@@ -1,7 +1,47 @@
-.footer{
-  &__shapes{
+.footer {
+  &__shapes {
+    @media (min-width: 0px) {
+      justify-content: center;
+    }
     @media (min-width: 768px) {
       justify-content: center;
+    }
+  }
+
+  &_shape {
+    @media (min-width: 576px) {
+      border-radius: 8px;
+      width: 36.89px;
+      height: 36.89px;
+    }
+    @media (min-width: 768px) {
+      border-radius: 14px;
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  &__logo {
+    &_society {
+      @media (min-width: 576px) {
+        max-width: 21.71px;
+        min-width: 15.67px;
+      }
+
+      @media (min-width: 768px) {
+        max-width: 30.61px;
+        min-width: 30.61px;
+      }
+      &_2 {
+        @media (min-width: 768px) {
+          max-width: 36.73px;
+          min-width: 36.73px;
+        }
+        @media (min-width: 576px) {
+          max-width: 26.05px;
+          min-width: 19.89px;
+        }
+      }
     }
   }
 }

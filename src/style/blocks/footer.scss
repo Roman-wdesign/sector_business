@@ -9,19 +9,11 @@
 
   &__logo {
     &_society {
-      padding: 0;
-      margin: 0;
-      @extend .footer__logo;
-      min-width: 30.61px;
-      min-height: 22.9px;
-
+      @include m_p_height;
       background-image: url($ico_path + "vector.svg");
 
       &_2 {
-        @extend .footer__logo;
-        min-width: 36.73px;
-        min-height: 29.07px;
-
+        @include m_p_height;
         background-image: url($ico_path + "twitter.svg");
       }
     }
@@ -32,16 +24,12 @@
     justify-content: center;
     align-items: center;
 
-    width: 52px;
-    height: 52px;
-
     background: linear-gradient(
       135.83deg,
       rgba(216, 227, 255, 0.2) 11.5%,
       rgba(255, 245, 238, 0.102) 83.39%
     );
     backdrop-filter: blur(4px);
-    border-radius: 14px;
 
     &:hover {
       background: rgba(255, 255, 255, 0.5);
