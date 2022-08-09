@@ -232,14 +232,12 @@
         class="row gy-3 d-flex justify-content-center"
         style="margin-bottom: 150px"
       >
-        <div class="col-10 d-flex justify-content-center">
-          <div
-            class="price__block-list d-flex justify-content-center flex-column"
-          >
+        <div class="col d-flex justify-content-center">
+          <div class="price__block-list">
             <h2 class="price__header d-flex justify-content-center">
               400 NFTs
             </h2>
-            <div class="number" style="margin-bottom: 85px; margin-top: 50px">
+            <div class="number">
               <div class="number__row">
                 <div class="number_shape"><p class="number_figure">1</p></div>
                 <div class="number_content">
@@ -429,7 +427,10 @@
         </div>
       </section>
       <footer class="row footer xs-wrap sm-wrap md-nowrap">
-        <router-link class="col-1 logo__router" :to="{ name: 'start' }">
+        <router-link
+          class="col-xs-12 col-sm-12 col-md-1 d-flex justify-content-center logo__router"
+          :to="{ name: 'start' }"
+        >
           <img
             src="../assets/svg/tokenLogo.svg"
             class="header__logo img-fluid"
@@ -437,21 +438,23 @@
           />
         </router-link>
 
-        <div class="col-1">
-          <router-link class="header__links-route" :to="{ name: 'start' }"
+          <div class="text-center footer-links col-sm-3 col-md-1">
+            <router-link class="header__links-route" :to="{ name: 'start' }"
             >Privacy
-          </router-link>
-        </div>
-        <div class="col-1">
-          <router-link class="header__links-route" :to="{ name: 'start' }"
+            </router-link>
+          </div>
+          <div class="text-center col-sm-3 col-md-1">
+            <router-link class="header__links-route" :to="{ name: 'start' }"
             >Terms
-          </router-link>
-        </div>
-        <div class="col-sm-3 col-md-2">
-          <router-link class="header__links-route" :to="{ name: 'start' }"
+            </router-link>
+          </div>
+          <div class="text-center col-sm-3 col-md-2">
+            <router-link class="header__links-route" :to="{ name: 'start' }"
             >Contact Us
-          </router-link>
-        </div>
+            </router-link>
+          </div>
+
+
         <div class="col-sm-12 col-md-4 col-lg-2 flex-wrap">
           <div class="footer__shapes">
             <div class="footer_shape m-2">

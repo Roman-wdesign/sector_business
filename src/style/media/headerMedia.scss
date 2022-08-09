@@ -14,23 +14,13 @@
 
   &__block_image {
     @media (min-width: 0px) {
-
+      @include header_media;
     }
     @media (min-width: 576px) {
-      position: absolute;
-      top: 650px;
-      left: 0;
-      margin-left: auto;
-      margin-right: auto;
-      right: 0;
+      @include header_media;
     }
     @media (min-width: 768px) {
-      position: absolute;
-      top: 650px;
-      left: 0;
-      margin-left: auto;
-      margin-right: auto;
-      right: 0;
+      @include header_media;
     }
     @media (min-width: 992px) {
       left: unset;
@@ -44,4 +34,5 @@
       right: 0;
     }
   }
+
 }

@@ -1,35 +1,16 @@
 .number {
-  @media (min-width: 0px) {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  @media (min-width: 576px) {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  @media (min-width: 768px) {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  @media (min-width: 992px) {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  @media (min-width: 1200px) {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   &_shape {
     @media (min-width: 0px) {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 0.25rem;
+    }
+    @media (min-width: 576px) {
       width: 3rem;
       height: 3rem;
       border-radius: 0.875rem;
     }
-    @media (min-width: 576px) {
-    }
     @media (min-width: 768px) {
-
     }
     @media (min-width: 992px) {
       width: 3rem;
@@ -39,4 +20,5 @@
     @media (min-width: 1200px) {
     }
   }
+
 }
