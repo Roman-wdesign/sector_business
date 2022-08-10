@@ -1,88 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <header class="header row pt-5">
-        <router-link class="col-1 logo__router" :to="{ name: 'start' }">
-          <img
-            src="../assets/svg/tokenLogo.svg"
-            class="header__logo img-fluid"
-            alt="Logo"
-          />
-        </router-link>
-
-        <div class="col d-sm-block d-xs-block d-md-block d-lg-none">
-          <div id="sidemenu">
-            <button
-              class="sidemenu__btn"
-              v-on:click="navOpen = !navOpen"
-              v-bind:class="{ active: navOpen }"
-            >
-              <span class="top"></span>
-              <span class="mid"></span>
-              <span class="bottom"></span>
-            </button>
-            <transition name="translateX">
-              <nav v-show="navOpen">
-                <div class="sidemenu__wrapper">
-                  <ul class="sidemenu__list">
-                    <li class="sidemenu__item">
-                      <router-link
-                        class="header__links-route"
-                        :to="{ name: 'start' }"
-                        >Home
-                      </router-link>
-                    </li>
-                    <li class="sidemenu__item">
-                      <router-link
-                        class="header__links-route"
-                        :to="{ name: 'start' }"
-                        >How it works
-                      </router-link>
-                    </li>
-                    <li class="sidemenu__item">
-                      <router-link
-                        class="header__links-route"
-                        :to="{ name: 'start' }"
-                        >Services
-                      </router-link>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </transition>
-          </div>
-        </div>
-
-        <div class="col-1 d-none d-lg-block">
-          <router-link class="header__links-route" :to="{ name: 'start' }"
-            >Home
-          </router-link>
-        </div>
-        <div class="col-2 d-none d-lg-block">
-          <router-link class="header__links-route" :to="{ name: 'start' }"
-            >How it works
-          </router-link>
-        </div>
-        <div class="col-1 d-none d-lg-block">
-          <router-link class="header__links-route" :to="{ name: 'start' }"
-            >Services
-          </router-link>
-        </div>
-
-        <div class="col-xs-4 col-sm-4 col-md-6">
-          <img
-            src="../assets/img/NFT.png"
-            class="header__block_image img-fluid"
-            alt="NFT"
-          />
-          <button
-            type="button"
-            class="header__block_button d-none d-lg-block position-absolute"
-          >
-            Connect Wallet
-          </button>
-        </div>
-      </header>
+      <mcv-header />
 
       <section class="row great gy-3">
         <div class="col">
@@ -127,29 +46,8 @@
               1 cr of land mint price<br />
               3000 NFT’s
             </h2>
-            <div class="number">
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">1</p></div>
-                <div class="number_content">
-                  Acre of digital land that you will own
-                </div>
-              </div>
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">2</p></div>
-                <div class="number_content">
-                  Acre of digital land that you will own
-                </div>
-              </div>
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">3</p></div>
-                <div class="number_content">
-                  Acre of digital land that you will own
-                </div>
-              </div>
-            </div>
-            <div class="main-buttons">
-              <button class="main-buttons__button">Connect Wallet</button>
-            </div>
+            <mcv-crypto-list />
+            <mcv-btn-main/>
           </div>
         </div>
       </section>
@@ -164,29 +62,8 @@
               1 cr of land mint price<br />
               3000 NFT’s
             </h2>
-            <div class="number">
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">1</p></div>
-                <div class="number_content">
-                  Acre of digital land that you will own
-                </div>
-              </div>
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">2</p></div>
-                <div class="number_content">
-                  Acre of digital land that you will own
-                </div>
-              </div>
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">3</p></div>
-                <div class="number_content">
-                  Acre of digital land that you will own
-                </div>
-              </div>
-            </div>
-            <div class="main-buttons">
-              <button class="main-buttons__button">Connect Wallet</button>
-            </div>
+            <mcv-crypto-list />
+            <mcv-btn-main/>
           </div>
         </div>
         <div class="col-sm-8 col-md-4">
@@ -237,28 +114,9 @@
             <h2 class="price__header d-flex justify-content-center">
               400 NFTs
             </h2>
-            <div class="number">
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">1</p></div>
-                <div class="number_content">
-                  1 Acre of land +4000 sq feet metaverse house
-                </div>
-              </div>
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">2</p></div>
-                <div class="number_content">
-                  Walk around your house and land on the metaverse
-                </div>
-              </div>
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">3</p></div>
-                <div class="number_content">
-                  Invite friends to your house and sell your house on opensea
-                </div>
-              </div>
-            </div>
-            <div class="main-buttons d-flex justify-content-center">
-              <button class="main-buttons__button">Connect Wallet</button>
+            <mcv-crypto-list />
+            <div class="div d-flex justify-content-center">
+              <mcv-btn-main/>
             </div>
           </div>
         </div>
@@ -274,29 +132,8 @@
               1 acre + 4000 Square<br />
               ft land metaverse house
             </h2>
-            <div class="number">
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">1</p></div>
-                <div class="number_content">
-                  Acre of digital land that you will own
-                </div>
-              </div>
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">2</p></div>
-                <div class="number_content">
-                  Acre of digital land that you will own
-                </div>
-              </div>
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">3</p></div>
-                <div class="number_content">
-                  Acre of digital land that you will own
-                </div>
-              </div>
-            </div>
-            <div class="main-buttons">
-              <button class="main-buttons__button">Connect Wallet</button>
-            </div>
+            <mcv-crypto-list />
+            <mcv-btn-main/>
           </div>
         </div>
         <div class="col-sm-8 col-md-4">
@@ -407,85 +244,23 @@
             class="price__block-list d-flex flex-column justify-content-evenly"
           >
             <h1 class="price__header">*Coming Soon*</h1>
-            <div class="number">
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">1</p></div>
-                <div class="number_content">10 Acre of digital land</div>
-              </div>
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">2</p></div>
-                <div class="number_content">
-                  Walk around your land on the metaverse
-                </div>
-              </div>
-              <div class="number__row">
-                <div class="number_shape"><p class="number_figure">3</p></div>
-                <div class="number_content">Build Mansion on your land</div>
-              </div>
-            </div>
+            <mcv-crypto-list />
           </div>
         </div>
       </section>
-      <footer class="row footer xs-wrap sm-wrap md-nowrap" style="margin-bottom: 6.25rem">
-        <router-link
-          class="col-xs-12 col-sm-12 col-md-1 d-flex justify-content-center logo__router"
-          :to="{ name: 'start' }"
-        >
-          <img
-            src="../assets/svg/tokenLogo.svg"
-            class="header__logo img-fluid"
-            alt="Logo"
-          />
-        </router-link>
-
-          <div class="text-center footer-links col-sm-3 col-md-1">
-            <router-link class="header__links-route" :to="{ name: 'start' }"
-            >Privacy
-            </router-link>
-          </div>
-          <div class="text-center col-sm-3 col-md-1">
-            <router-link class="header__links-route" :to="{ name: 'start' }"
-            >Terms
-            </router-link>
-          </div>
-          <div class="text-center col-sm-3 col-md-2">
-            <router-link class="header__links-route" :to="{ name: 'start' }"
-            >Contact Us
-            </router-link>
-          </div>
-
-
-        <div class="col-sm-12 col-md-4 col-lg-2 flex-wrap">
-          <div class="footer__shapes">
-            <div class="footer_shape m-2">
-              <router-link class="header__links-route" :to="{ name: 'start' }">
-                <img
-                  src="../assets/svg/vector.svg"
-                  class="footer__logo_society img-fluid"
-                  alt="Social"
-                />
-              </router-link>
-            </div>
-            <div class="footer_shape m-2">
-              <router-link class="header__links-route" :to="{ name: 'start' }">
-                <img
-                  src="../assets/svg/twitter.svg"
-                  class="footer__logo_society_2 img-fluid"
-                  alt="Social2"
-                />
-              </router-link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <mcv-footer />
     </div>
   </div>
 </template>
 
 <script>
+import McvHeader from "@/components/Header";
+import McvFooter from "@/components/Footer";
+import McvCryptoList from "@/components/Crypto/CryptoList";
+import McvBtnMain from '@/components/btn/BtnMain';
 export default {
   name: "McvHome",
-
+  components: {McvBtnMain, McvCryptoList, McvFooter, McvHeader },
   data: () => ({
     navOpen: false,
   }),
