@@ -2,40 +2,40 @@
   font: {
     style: normal;
     family: $font_Roboto_400_Regular;
-    size: 14px;
+    size: 0.875rem;
     weight: 400;
   }
-  line-height: 19.28px;
+  line-height: 19.28;
 }
 
 @mixin Roboto_500_Medium {
   font: {
     style: normal;
     family: $font_Roboto_500_Medium;
-    size: 13px;
+    size: 0.813rem;
     weight: 500;
   }
-  line-height: 17.9px;
+  line-height: 17.9;
 }
 
 @mixin Roboto_600_SemiBold {
   font: {
     style: normal;
     family: $font_Roboto_600_SemiBold;
-    size: 14px;
+    size: 0.875rem;
     weight: 600;
   }
-  line-height: 19.28px;
+  line-height: 19.28;
 }
 
 @mixin Roboto_700_Bold {
   font: {
     style: italic;
     family: $font_Roboto_700_BoldItalic;
-    size: 18px;
+    size: 1.125rem;
     weight: 700;
   }
-  line-height: 24.78px;
+  line-height: 24.78;
 }
 
 @mixin flex_item {
@@ -43,14 +43,14 @@
   justify-content: center;
   align-items: center;
   border: $border_color;
-  padding: 12px;
+  padding: 0.75rem;
 }
 @mixin flex_item_2 {
   display: flex;
   justify-content: left;
   align-items: center;
   border: $border_color;
-  padding: 12px;
+  padding: 0.75rem;
 }
 
 @mixin flex_table {
@@ -59,12 +59,12 @@
 }
 
 @mixin button_style {
-  padding: 15px 32px;
+  padding: 0.938rem 2rem;
   cursor: pointer;
 
   &:hover {
     color: white;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     background-color: #474955;
   }
 
@@ -84,7 +84,7 @@
     display: flex;
     justify-content: center;
 
-    max-width: 273px;
+    max-width: 17.063rem;
     height: auto;
   }
   @media (min-width: 576px) {
@@ -92,11 +92,11 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    max-width: 273px;
+    max-width: 17.063rem;
     height: auto;
   }
   @media (min-width: 768px) {
-    max-width: 432px;
+    max-width: 27rem;
     height: auto;
   }
 }
@@ -117,7 +117,7 @@
 
 @mixin header_media{
   position: absolute;
-  top: 600px;
+  top: 37.5rem;
   left: 0;
   margin-left: auto;
   margin-right: auto;

@@ -1,6 +1,4 @@
-
 .search {
-
   margin: 0;
   max-width: 631px;
   width: auto;
@@ -9,7 +7,7 @@
   background-color: $search_background;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -18,25 +16,20 @@
     width: 21px;
     height: 20.98px;
 
-
-
     background-image: url($ico_path + "search.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .search__input {
-
     @include Roboto_400_Regular;
     color: white;
     border: none;
     background-color: $search_background;
 
-
     padding: 0 0 0 26px;
     width: 605px;
     height: 52px;
-
 
     ::placeholder {
       color: $search_color;

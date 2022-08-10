@@ -1,5 +1,5 @@
 .footer {
-  min-height: 193px;
+  min-height: 12.063rem;
   align-items: center;
 
   &__shapes {
@@ -29,11 +29,11 @@
       rgba(216, 227, 255, 0.2) 11.5%,
       rgba(255, 245, 238, 0.102) 83.39%
     );
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(0.25rem);
 
     &:hover {
       background: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(1px);
+      backdrop-filter: blur(0.063rem);
     }
   }
 }

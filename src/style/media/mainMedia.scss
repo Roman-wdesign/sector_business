@@ -41,6 +41,13 @@
   }
 
   &__rectangle {
+    @media (min-width: 0px) {
+      width: 6.625rem;
+      height: 0.813rem;
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+    }
     @media (min-width: 576px) {
       width: 6.625rem;
       height: 0.813rem;

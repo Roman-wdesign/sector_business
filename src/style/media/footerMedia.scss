@@ -1,48 +1,77 @@
 .footer {
   &__shapes {
     @media (min-width: 0px) {
+      margin-top: 2rem;
+      justify-content: center;
+    }
+    @media (min-width: 576px) {
+      margin-top: 2rem;
       justify-content: center;
     }
     @media (min-width: 768px) {
+      margin-top: 0;
       justify-content: center;
     }
   }
 
   &_shape {
+    @media (min-width: 0px) {
+      border-radius: 0.5rem;
+      width: 2.556rem;
+      height: 2.556rem;
+    }
     @media (min-width: 576px) {
-      border-radius: 8px;
-      width: 36.89px;
-      height: 36.89px;
+      border-radius: 0.5rem;
+      width: 2.556rem;
+      height: 2.556rem;
     }
     @media (min-width: 768px) {
-      border-radius: 14px;
-      width: 52px;
-      height: 52px;
+      border-radius: 0.875rem;
+      width: 3.25rem;
+      height: 3.25rem;
     }
   }
 
   &__logo {
     &_society {
+      @media (min-width: 0px) {
+        max-width: 1.357rem;
+        min-width: 0.979rem;
+      }
       @media (min-width: 576px) {
-        max-width: 21.71px;
-        min-width: 15.67px;
+        max-width: 1.357rem;
+        min-width: 0.979rem;
       }
 
       @media (min-width: 768px) {
-        max-width: 30.61px;
-        min-width: 30.61px;
+        max-width: 1.913rem;
+        min-width: 1.913rem;
       }
       &_2 {
-        @media (min-width: 768px) {
-          max-width: 36.73px;
-          min-width: 36.73px;
+        @media (min-width: 0px) {
+          max-width: 1.628rem;
+          min-width: 1.243rem;
         }
         @media (min-width: 576px) {
-          max-width: 26.05px;
-          min-width: 19.89px;
+          max-width: 1.628rem;
+          min-width: 1.243rem;
+        }
+        @media (min-width: 768px) {
+          max-width: 2.296rem;
+          min-width: 2.296rem;
         }
       }
     }
   }
-
+}
+.logo__router {
+  @media (min-width: 0px) {
+    margin-bottom: 2rem;
+  }
+  @media (min-width: 576px) {
+    margin-bottom: 2rem;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }

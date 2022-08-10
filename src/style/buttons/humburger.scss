@@ -1,25 +1,22 @@
 #sidemenu {
   nav {
-    width: 200px;
-    // height: calc(100% - #{$headerHeight} - #{$footerHeight});
+    width: 12.5rem;
     background: #c0c0c0;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 99;
-    // box-shadow: 2px 0 3px$grey-6;
-    // overflow-y: scroll;
   }
 
   .sidemenu {
     &__btn {
       display: block;
-      width: 50px;
-      height: 50px;
+      width: 3.125rem;
+      height: 3.125rem;
       background: transparent;
       border: none;
       position: absolute;
-      top: 50px;
+      top: 3.125rem;
       right: 0;
       z-index: 100;
       appearance: none;
@@ -28,8 +25,8 @@
 
       span {
         display: block;
-        width: 20px;
-        height: 2px;
+        width: 1.25rem;
+        height: 0.125rem;
         margin: auto;
         background: white;
         position: absolute;
@@ -37,16 +34,15 @@
         bottom: 0;
         left: 0;
         right: 0;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
 
         &.top {
-          transform: translateY(-8px);
+          transform: translateY(-0.5rem);
         }
 
         &.bottom {
-          transform: translateY(8px);
+          transform: translateY(0.5rem);
         }
-
       }
 
       &.active {
@@ -55,8 +51,7 @@
         }
 
         .mid {
-
-          transform: translateX(20px);
+          transform: translateX(1.25rem);
           opacity: 0;
         }
 
@@ -64,15 +59,13 @@
           transform: rotate(45deg);
         }
       }
-
     }
 
     &__wrapper {
-      padding-top: 50px;
+      padding-top: 3.125rem;
     }
 
     &__list {
-      //padding-top: 50px;
       list-style: none;
       padding: 0;
       margin: 0;
@@ -81,12 +74,12 @@
     &__item {
       a {
         text-decoration: none;
-        line-height: 1.6em;
-        font-size: 1.6em;
-        padding: .5em;
+        line-height: 1.5940226008217rem;
+        font-size: 1.5940226008217rem;
+        padding: 0.4981320627568rem;
         display: block;
         color: #ffffff;
-        transition: .4s ease;
+        transition: 0.4s ease;
 
         &:hover {
           background: $layout_color;
@@ -98,16 +91,17 @@
 }
 
 .translateX-enter {
-  transform: translateX(200px);
+  transform: translateX(12.5rem);
   opacity: 0;
 }
 
-.translateX-enter-active, .translateX-leave-active {
+.translateX-enter-active,
+.translateX-leave-active {
   transform-origin: top left 0;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 .translateX-leave-to {
-  transform: translateX(200px);
+  transform: translateX(12.5rem);
   opacity: 0;
 }

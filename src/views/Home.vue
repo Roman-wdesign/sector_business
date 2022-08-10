@@ -112,7 +112,7 @@
 
       <section
         class="row first-section xs-wrap sm-wrap md-nowrap gy-3"
-        style="margin-bottom: 150px"
+        style="margin-bottom: 9.375rem"
       >
         <div class="col-sm-8 col-md-4">
           <img
@@ -156,7 +156,7 @@
 
       <section
         class="row first-section xs-wrap sm-wrap md-nowrap gy-3"
-        style="margin-bottom: 150px"
+        style="margin-bottom: 9.375rem"
       >
         <div class="first-block col-md-6 col-lg-4">
           <div class="price__block-list">
@@ -198,13 +198,13 @@
         </div>
       </section>
 
-      <section class="row gy-3" style="margin-bottom: 65px">
+      <section class="row gy-3" style="margin-bottom: 4.063rem">
         <div class="col text-center">
           <h2>! Acre + 4000 Sq ft Of Land Metavarce House</h2>
         </div>
       </section>
 
-      <section class="trinity_img row gy-3" style="margin-bottom: 90px">
+      <section class="trinity_img row gy-3" style="margin-bottom: 5.625rem">
         <div class="col">
           <img
             src="../assets/img/trinityWoman.png"
@@ -230,7 +230,7 @@
 
       <section
         class="row gy-3 d-flex justify-content-center"
-        style="margin-bottom: 150px"
+        style="margin-bottom: 9.375rem"
       >
         <div class="col d-flex justify-content-center">
           <div class="price__block-list">
@@ -266,7 +266,7 @@
 
       <section
         class="row first-section xs-wrap sm-wrap md-nowrap gy-3"
-        style="margin-bottom: 150px"
+        style="margin-bottom: 9.375rem"
       >
         <div class="first-block col-md-6 col-lg-4">
           <div class="price__block-list">
@@ -310,7 +310,7 @@
 
       <section
         class="roadmap d-flex justify-content-evenly row gy-5"
-        style="margin-bottom: 150px"
+        style="margin-bottom: 9.375rem"
       >
         <h1 class="price__header d-flex justify-content-center mb-5">
           Roadmap
@@ -426,7 +426,7 @@
           </div>
         </div>
       </section>
-      <footer class="row footer xs-wrap sm-wrap md-nowrap">
+      <footer class="row footer xs-wrap sm-wrap md-nowrap" style="margin-bottom: 6.25rem">
         <router-link
           class="col-xs-12 col-sm-12 col-md-1 d-flex justify-content-center logo__router"
           :to="{ name: 'start' }"

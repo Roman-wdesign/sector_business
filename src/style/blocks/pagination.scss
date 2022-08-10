@@ -1,13 +1,13 @@
-
 .footer {
-  padding: 0 16px;
-  margin-top: 24px;
+  padding: 0 1rem;
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.footer-forward, .footer-back {
+.footer-forward,
+.footer-back {
   color: $search_background;
   text-decoration: none;
   @include button_style;
@@ -22,7 +22,7 @@
     }
 
     display: table-cell;
-    padding: 0 3px;
+    padding: 0 0.188rem;
   }
 
   &__link {

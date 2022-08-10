@@ -29,14 +29,14 @@
 @import "media/priceMedia";
 @import "media/first-sectionMedia";
 
-
-
 @import "~bootstrap/scss/bootstrap";
 
 * {
   box-sizing: border-box;
 }
-
+html {
+  font-size: 16px;
+}
 body {
   margin: 0;
   color: white;

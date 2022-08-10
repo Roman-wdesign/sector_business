@@ -1,17 +1,14 @@
-@import "~bootstrap/scss/bootstrap-grid";
-
 .main {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   &-buttons {
     display: flex;
     flex-direction: row;
   }
   &__content {
-    margin: 0 0 0 12px;
-
+    margin: 0 0 0 0.75rem;
   }
-  &__content_text{
-    margin: 55px 0;
+  &__content_text {
+    margin: 3.438rem 0;
   }
   &__rectangle {
     background: linear-gradient(269.43deg, #df25e1 -10.55%, #5218f4 114.67%);

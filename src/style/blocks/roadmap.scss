@@ -2,7 +2,7 @@
   &_shell {
     padding: 40px;
     background: rgba(218, 37, 226, 0.2);
-    border-radius: 14px;
+    border-radius: 0.875rem;
   }
 
   &__row {
@@ -10,12 +10,8 @@
     flex-direction: row;
     align-items: center;
 
-
-
     &:not(:last-child) {
-
-      margin-bottom: 37px;
+      margin-bottom: 2.313rem;
     }
   }
-
 }

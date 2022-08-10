@@ -1,9 +1,6 @@
-
-
 .number {
-  padding-left: 5px;
-  margin: 50px 0;
-
+  padding-left: 0.313rem;
+  margin: 3.125rem 0;
 
   &__row {
     display: flex;
@@ -27,7 +24,6 @@
       rgba(87, 24, 243, 0.2) 110.24%,
       rgba(255, 245, 238, 0.2) 110.24%
     );
-
   }
 
   &_content {

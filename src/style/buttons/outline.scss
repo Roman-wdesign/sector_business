@@ -1,18 +1,15 @@
 .header__block_button {
-
   @extend .button;
   position: absolute;
-  right: 120px;
-  top: 45px;
-
+  right: 7.5rem;
+  top: 2.813rem;
 
   color: #ffffff;
   background-color: inherit;
-  border: 2px solid #ffffff;
-
+  border: 0.125rem solid #ffffff;
 
   &:hover {
-    color: #D824E2;
+    color: #d824e2;
     background: #ffffff;
   }
 }
@@ -20,17 +17,15 @@
 .main-buttons__button-v2 {
   @extend .button;
   background: linear-gradient($body_color, $body_color) padding-box,
-  linear-gradient(45deg, #D824E2, #5317F4) border-box;
+    linear-gradient(45deg, #d824e2, #5317f4) border-box;
   border: 1px solid transparent;
   border-radius: 0.5rem;
   color: #ffffff;
-  transition-timing-function: cubic-bezier(0, 0, .58, 1);
-
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
 
   &:hover {
-    color: #D824E2;
+    color: #d824e2;
     background: #ffffff;
     border: 1px solid #ffffff;
   }
-
 }

@@ -1,18 +1,16 @@
-@import "~bootstrap/scss/bootstrap-grid";
-
 .header {
   align-items: center;
-  min-height: 90px;
+  min-height: 5.625rem;
 
   &__logo {
-    max-width: 53.89px;
-    min-width: 24px;
+    max-width: 3.368rem;
+    min-width: 1.5rem;
     height: auto;
   }
 
   &__block {
     &_image {
-      max-width: 672px;
+      max-width: 42rem;
       height: auto;
       z-index: -1;
     }
