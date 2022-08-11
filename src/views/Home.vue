@@ -47,7 +47,7 @@
               3000 NFT’s
             </h2>
             <mcv-crypto-list />
-            <mcv-btn-main/>
+            <mcv-btn-main />
           </div>
         </div>
       </section>
@@ -63,7 +63,7 @@
               3000 NFT’s
             </h2>
             <mcv-crypto-list />
-            <mcv-btn-main/>
+            <mcv-btn-main />
           </div>
         </div>
         <div class="col-sm-8 col-md-4">
@@ -116,7 +116,7 @@
             </h2>
             <mcv-crypto-list />
             <div class="div d-flex justify-content-center">
-              <mcv-btn-main/>
+              <mcv-btn-main />
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@
               ft land metaverse house
             </h2>
             <mcv-crypto-list />
-            <mcv-btn-main/>
+            <mcv-btn-main />
           </div>
         </div>
         <div class="col-sm-8 col-md-4">
@@ -257,13 +257,11 @@
 import McvHeader from "@/components/Header";
 import McvFooter from "@/components/Footer";
 import McvCryptoList from "@/components/Crypto/CryptoList";
-import McvBtnMain from '@/components/btn/BtnMain';
+import McvBtnMain from "@/components/btn/BtnMain";
 export default {
   name: "McvHome",
-  components: {McvBtnMain, McvCryptoList, McvFooter, McvHeader },
-  data: () => ({
-    navOpen: false,
-  }),
+  components: { McvBtnMain, McvCryptoList, McvFooter, McvHeader },
+  data: () => ({}),
   methods: {},
 };
 </script>

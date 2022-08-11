@@ -13,10 +13,10 @@ export default {
     product_data: {
       type: Object,
       default() {
-        return {}
-      }
-    }
-  }
-}
+        return {};
+      },
+    },
+  },
+};
 </script>
 <style scoped></style>

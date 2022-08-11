@@ -9,46 +9,7 @@
     </router-link>
 
     <div class="col d-sm-block d-xs-block d-md-block d-lg-none">
-      <div id="sidemenu">
-        <button
-            class="sidemenu__btn"
-            v-on:click="navOpen = !navOpen"
-            v-bind:class="{ active: navOpen }"
-        >
-          <span class="top"></span>
-          <span class="mid"></span>
-          <span class="bottom"></span>
-        </button>
-        <transition name="translateX">
-          <nav v-show="navOpen">
-            <div class="sidemenu__wrapper">
-              <ul class="sidemenu__list">
-                <li class="sidemenu__item">
-                  <router-link
-                      class="header__links-route"
-                      :to="{ name: 'start' }"
-                  >Home
-                  </router-link>
-                </li>
-                <li class="sidemenu__item">
-                  <router-link
-                      class="header__links-route"
-                      :to="{ name: 'start' }"
-                  >How it works
-                  </router-link>
-                </li>
-                <li class="sidemenu__item">
-                  <router-link
-                      class="header__links-route"
-                      :to="{ name: 'start' }"
-                  >Services
-                  </router-link>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </transition>
-      </div>
+      <mcv-burger-menu/>
     </div>
 
     <div class="col-1 d-none d-lg-block">
@@ -84,8 +45,13 @@
 </template>
 
 <script>
+import McvBurgerMenu from '@/components/BurgerMenu';
 export default {
-  name: "McvHeader"
+  name: "McvHeader",
+  data: () => ({
+
+  }),
+  components: {McvBurgerMenu}
 }
 </script>
 
