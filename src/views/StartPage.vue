@@ -1,11 +1,14 @@
 <template>
-  <div class="container" style="background-color: white">
+  <body style="background-color: white">
+  <div class="container">
     <div class="content">
       <div class="grid">
         <mcv-product-list />
       </div>
     </div>
   </div>
+  </body>
+
 </template>
 
 <script>
