@@ -1,16 +1,16 @@
 .myTable {
   @include Roboto_600_SemiBold;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 4rem 33.3% auto;
+  grid-template-rows: 4rem;
+  justify-items:center;
 
-  margin-top: 15px;
-  max-width: 1077px;
 
-  height: 57px;
-  padding: 0 211px 0 23px;
+
+  padding: 0 0.5rem;
+  width: 100%;
+  max-height: 3rem;
 
   background-color: $header_background;
   color: #ffffff;

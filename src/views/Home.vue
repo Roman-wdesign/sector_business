@@ -2,7 +2,19 @@
   <div>
     <div class="container">
       <mcv-header />
-
+      <div class="col-xs-4 col-sm-4 col-md-6">
+        <img
+          src="../assets/img/NFT.png"
+          class="header__block_image img-fluid"
+          alt="NFT"
+        />
+        <button
+          type="button"
+          class="header__block_button d-none d-lg-block position-absolute"
+        >
+          Connect Wallet
+        </button>
+      </div>
       <section class="row great gy-3">
         <div class="col">
           <div class="main">
@@ -47,7 +59,7 @@
               3000 NFT’s
             </h2>
             <mcv-crypto-list />
-            <mcv-btn-main />
+            <mcv-btn-main>Connect Wallet</mcv-btn-main>
           </div>
         </div>
       </section>
@@ -63,7 +75,7 @@
               3000 NFT’s
             </h2>
             <mcv-crypto-list />
-            <mcv-btn-main />
+            <mcv-btn-main>Connect Wallet</mcv-btn-main>
           </div>
         </div>
         <div class="col-sm-8 col-md-4">
@@ -116,7 +128,7 @@
             </h2>
             <mcv-crypto-list />
             <div class="div d-flex justify-content-center">
-              <mcv-btn-main />
+              <mcv-btn-main>Connect Wallet</mcv-btn-main>
             </div>
           </div>
         </div>
@@ -133,7 +145,7 @@
               ft land metaverse house
             </h2>
             <mcv-crypto-list />
-            <mcv-btn-main />
+            <mcv-btn-main>Connect Wallet</mcv-btn-main>
           </div>
         </div>
         <div class="col-sm-8 col-md-4">

@@ -15,7 +15,7 @@
     size: 0.813rem;
     weight: 500;
   }
-  line-height: 17.9;
+  //line-height: 17.9;
 }
 
 @mixin Roboto_600_SemiBold {
@@ -56,6 +56,7 @@
 @mixin flex_table {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 @mixin button_style {

@@ -1,17 +1,8 @@
 <template>
-  <div class="land">
-    <div class="wrap" style="background-color: white">
-      <div class="header">
-      </div>
-      <div class="content">
-        <div class="myLinkStyle">
-          <router-link
-              style="text-decoration: none;"
-              :to="{name: 'home'}"
-          >Go to Home
-          </router-link>
-        </div>
-        <mcv-product-list/>
+  <div class="container" style="background-color: white">
+    <div class="content">
+      <div class="grid">
+        <mcv-product-list />
       </div>
     </div>
   </div>
@@ -23,11 +14,9 @@ import McvProductList from "@/components/ProductList";
 export default {
   name: "McvStartPage",
 
-  components: {McvProductList},
+  components: { McvProductList },
   data: () => ({}),
-}
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

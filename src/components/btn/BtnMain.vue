@@ -1,15 +1,15 @@
 <template>
   <div class="main-buttons">
-    <button class="main-buttons__button">Connect Wallet</button>
+    <button class="main-buttons__button">
+      <slot/>
+    </button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "McvBtnMain"
-}
+  name: "McvBtnMain",
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1,6 +1,6 @@
 .search {
   margin: 0;
-  max-width: 631px;
+  max-width: 39.438rem;
   width: auto;
   height: auto;
   position: relative;
@@ -11,10 +11,10 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 26px;
+    right: 1.625rem;
     margin: auto 0;
-    width: 21px;
-    height: 20.98px;
+    width: 1.313rem;
+    height: 1.311rem;
 
     background-image: url($ico_path + "search.svg");
     background-repeat: no-repeat;
@@ -27,9 +27,9 @@
     border: none;
     background-color: $search_background;
 
-    padding: 0 0 0 26px;
-    width: 605px;
-    height: 52px;
+    padding: 0 0 0 1.625rem;
+    width: 37.813rem;
+    height: 3.25rem;
 
     ::placeholder {
       color: $search_color;

@@ -27,20 +27,6 @@
       >Services
       </router-link>
     </div>
-
-    <div class="col-xs-4 col-sm-4 col-md-6">
-      <img
-          src="../assets/img/NFT.png"
-          class="header__block_image img-fluid"
-          alt="NFT"
-      />
-      <button
-          type="button"
-          class="header__block_button d-none d-lg-block position-absolute"
-      >
-        Connect Wallet
-      </button>
-    </div>
   </header>
 </template>
 
