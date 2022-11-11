@@ -1,0 +1,10 @@
+
+// my custom map
+$custom-colors: (
+        "indigo": $indigo
+);
+
+
+
+//merge maps
+$theme-colors: map-merge($theme-colors, $custom-colors)
