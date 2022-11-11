@@ -45,7 +45,7 @@
           <router-link class="header__links-route" :to="{ name: 'start' }">
             <img
               src="../assets/svg/twitter.svg"
-              class="footer__logo_society_2 img-fluid"
+              class="footer__logo_society-2 img-fluid"
               alt="Social2"
             />
           </router-link>

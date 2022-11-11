@@ -1,24 +1,22 @@
 .header {
   align-items: center;
   min-height: 5.625rem;
+}
 
-  &__logo {
-    max-width: 3.368rem;
-    min-width: 1.5rem;
-    height: auto;
-  }
+.header__logo {
+  max-width: 3.368rem;
+  min-width: 1.5rem;
+  height: auto;
+}
 
-  &__block {
-    &_image {
-      max-width: 42rem;
-      height: auto;
-      z-index: -1;
-    }
-  }
+.header__block_image {
+  max-width: 42rem;
+  height: auto;
+  z-index: -1;
+}
 
-  &__links-route {
-    color: inherit;
-    text-decoration: none;
-    border: none;
-  }
+.header__links-route {
+  color: inherit;
+  text-decoration: none;
+  border: none;
 }

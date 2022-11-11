@@ -1,17 +1,21 @@
 .main {
   margin-bottom: 3.125rem;
-  &-buttons {
-    display: flex;
-    flex-direction: row;
-  }
-  &__content {
-    margin: 0 0 0 0.75rem;
-  }
-  &__content_text {
-    margin: 3.438rem 0;
-  }
-  &__rectangle {
-    background: linear-gradient(269.43deg, #df25e1 -10.55%, #5218f4 114.67%);
-    z-index: -1;
-  }
+}
+
+.main-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__content {
+  margin: 0 0 0 0.75rem;
+}
+
+.main__content_text {
+  margin: 3.438rem 0;
+}
+
+.main__rectangle {
+  background: linear-gradient(269.43deg, #df25e1 -10.55%, #5218f4 114.67%);
+  z-index: -1;
 }

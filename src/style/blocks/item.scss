@@ -3,34 +3,33 @@
   grid-template-columns: 10% 1fr 1fr;
   grid-auto-rows: 5rem;
 
-
   @include Roboto_500_Medium;
   color: $header_background;
 
-  &__header {
-    @include Roboto_500_Medium;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: $border_color;
+}
 
-  }
+.item__header {
+  @include Roboto_500_Medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: $border_color;
+}
 
-  &__description {
-    @include Roboto_500_Medium;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: $border_color;
-    padding: 0.75rem;
-  }
+.item__description {
+  @include Roboto_500_Medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: $border_color;
+  padding: 0.75rem;
+}
 
-  &__body {
-    @include Roboto_500_Medium;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: $border_color;
-    padding: 0.75rem;
-  }
+.item__body {
+  @include Roboto_500_Medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: $border_color;
+  padding: 0.75rem;
 }

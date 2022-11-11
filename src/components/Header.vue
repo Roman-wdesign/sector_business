@@ -1,6 +1,6 @@
 <template>
   <header class="header row pt-5">
-    <router-link class="col-1 logo__router" :to="{ name: 'start' }">
+    <router-link class="col-1 align-items-center" :to="{ name: 'start' }">
       <img
           src="../assets/svg/tokenLogo.svg"
           class="header__logo img-fluid"

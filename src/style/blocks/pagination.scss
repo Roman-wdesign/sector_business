@@ -15,21 +15,20 @@
 
 .pagination {
   display: table;
+}
 
-  &__item {
-    :hover {
-      color: $search_background;
-    }
-
-    display: table-cell;
-    padding: 0 0.188rem;
-  }
-
-  &__link {
+.pagination__item  {
+  :hover {
     color: $search_background;
-    text-decoration: none;
-    @include Roboto_500_Medium;
   }
+
+  display: table-cell;
+  padding: 0 0.188rem;
+}
+.pagination__link {
+  color: $search_background;
+  text-decoration: none;
+  @include Roboto_500_Medium;
 }
 
 .active {

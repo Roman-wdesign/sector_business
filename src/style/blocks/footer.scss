@@ -1,39 +1,37 @@
 .footer {
   min-height: 12.063rem;
   align-items: center;
+}
 
-  &__shapes {
-    display: flex;
-    flex-direction: row;
-  }
+.footer__shapes {
+  display: flex;
+  flex-direction: row;
+}
 
-  &__logo {
-    &_society {
-      @include m_p_height;
-      background-image: url($ico_path + "vector.svg");
+.footer__logo_society {
+  @include m_p_height;
+  background-image: url($ico_path + "vector.svg");
+}
 
-      &_2 {
-        @include m_p_height;
-        background-image: url($ico_path + "twitter.svg");
-      }
-    }
-  }
+.footer__logo_society-2 {
+  @include m_p_height;
+  background-image: url($ico_path + "twitter.svg");
+}
 
-  &_shape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer_shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background: linear-gradient(
-      135.83deg,
-      rgba(216, 227, 255, 0.2) 11.5%,
-      rgba(255, 245, 238, 0.102) 83.39%
-    );
-    backdrop-filter: blur(0.25rem);
+  background: linear-gradient(
+                  135.83deg,
+                  rgba(216, 227, 255, 0.2) 11.5%,
+                  rgba(255, 245, 238, 0.102) 83.39%
+  );
+  backdrop-filter: blur(0.25rem);
 
-    &:hover {
-      background: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(0.063rem);
-    }
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.063rem);
   }
 }

@@ -18,6 +18,7 @@
       <section class="row great gy-3">
         <div class="col">
           <div class="main">
+
             <div class="main__content">
               <div class="main__content_header position-relative">
                 <h1 class="display-1 fw-bold">
@@ -45,15 +46,15 @@
         class="row first-section xs-wrap sm-wrap md-nowrap gy-3"
         style="margin-bottom: 9.375rem"
       >
-        <div class="col-sm-8 col-md-4">
+        <div class="first-block col-sm-6 col-md-6">
           <img
             src="../assets/img/secondImg.png"
-            class="price__block-image img-fluid"
+            class="img-fluid"
             alt="secondImg"
           />
         </div>
         <div class="first-block col-md-6 col-lg-4">
-          <div class="price__block-list">
+          <div class="price__block_list">
             <h2 class="price__header">
               1 cr of land mint price<br />
               3000 NFT’s
@@ -69,7 +70,7 @@
         style="margin-bottom: 9.375rem"
       >
         <div class="first-block col-md-6 col-lg-4">
-          <div class="price__block-list">
+          <div class="price__block_list">
             <h2 class="price__header">
               1 cr of land mint price<br />
               3000 NFT’s
@@ -78,10 +79,10 @@
             <mcv-btn-main>Connect Wallet</mcv-btn-main>
           </div>
         </div>
-        <div class="col-sm-8 col-md-4">
+        <div class="first-block col-sm-6 col-md-6">
           <img
             src="../assets/img/thirdBlock.png"
-            class="third-block-image img-fluid"
+            class="img-fluid"
             alt="secondImg"
           />
         </div>
@@ -122,7 +123,7 @@
         style="margin-bottom: 9.375rem"
       >
         <div class="col d-flex justify-content-center">
-          <div class="price__block-list">
+          <div class="price__block_list">
             <h2 class="price__header d-flex justify-content-center">
               400 NFTs
             </h2>
@@ -139,7 +140,7 @@
         style="margin-bottom: 9.375rem"
       >
         <div class="first-block col-md-6 col-lg-4">
-          <div class="price__block-list">
+          <div class="price__block_list">
             <h2 class="price__header">
               1 acre + 4000 Square<br />
               ft land metaverse house
@@ -148,10 +149,10 @@
             <mcv-btn-main>Connect Wallet</mcv-btn-main>
           </div>
         </div>
-        <div class="col-sm-8 col-md-4">
+        <div class="first-block col-sm-6 col-md-6">
           <img
             src="../assets/img/androidImg.png"
-            class="third-block-image img-fluid"
+            class="img-fluid"
             alt="secondImg"
           />
         </div>
@@ -244,16 +245,16 @@
         <h1 class="price__header d-flex justify-content-center mb-5">
           Mansion Battles Game
         </h1>
-        <div class="col-sm-8 col-md-4">
+        <div class="first-block col-sm-6 col-md-6">
           <img
             src="../assets/img/johnDoe.png"
-            class="price__block-image img-fluid"
+            class="img-fluid"
             alt="secondImg"
           />
         </div>
         <div class="first-block col-md-6 col-lg-4">
           <div
-            class="price__block-list d-flex flex-column justify-content-evenly"
+            class="price__block_list d-flex flex-column justify-content-evenly"
           >
             <h1 class="price__header">*Coming Soon*</h1>
             <mcv-crypto-list />

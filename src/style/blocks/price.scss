@@ -1,7 +1,6 @@
-.price {
-  &__block-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.price {}
+.price__block_list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

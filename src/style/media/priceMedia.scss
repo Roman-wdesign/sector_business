@@ -1,19 +1,17 @@
-.price {
-
-  &__header{
-    @media (min-width: 0px) {
-      text-align: center;
-    }
-    @media (min-width: 576px) {
-      text-align: center;
-    }
-    @media (min-width: 768px) {
-      text-align: left;
-    }
+.price__header {
+  @media (min-width: 0px) {
+    text-align: center;
   }
-
-  &__block-image {
-    @include responsive_img;
+  @media (min-width: 576px) {
+    text-align: center;
   }
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
 
+.price__block-image {
+  max-width:100%;
+  height:auto;
+  @include responsive_img;
 }

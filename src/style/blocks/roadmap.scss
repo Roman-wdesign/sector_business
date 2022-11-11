@@ -1,17 +1,15 @@
-.roadmap {
-  &_shell {
-    padding: 40px;
-    background: rgba(218, 37, 226, 0.2);
-    border-radius: 0.875rem;
-  }
+.roadmap {}
+.roadmap_shell{
+  padding: 40px;
+  background: rgba(218, 37, 226, 0.2);
+  border-radius: 0.875rem;
+}
+.roadmap__row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-  &__row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    &:not(:last-child) {
-      margin-bottom: 2.313rem;
-    }
+  &:not(:last-child) {
+    margin-bottom: 2.313rem;
   }
 }

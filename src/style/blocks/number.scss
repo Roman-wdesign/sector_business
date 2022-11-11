@@ -1,38 +1,38 @@
 .number {
   padding-left: 0.313rem;
   margin: 3.125rem 0;
+}
 
-  &__row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.number__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    &:not(:last-child) {
-      margin-bottom: 2.313rem;
-    }
+  &:not(:last-child) {
+    margin-bottom: 2.313rem;
   }
+}
 
-  &_shape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1rem;
+.number_shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
 
-    background: linear-gradient(
-      127.41deg,
-      rgba(218, 37, 226, 0.2) 14.83%,
-      rgba(87, 24, 243, 0.2) 110.24%,
-      rgba(255, 245, 238, 0.2) 110.24%
-    );
-  }
+  background: linear-gradient(
+                  127.41deg,
+                  rgba(218, 37, 226, 0.2) 14.83%,
+                  rgba(87, 24, 243, 0.2) 110.24%,
+                  rgba(255, 245, 238, 0.2) 110.24%
+  );
+}
 
-  &_content {
-    text-align: center;
-  }
+.number_content {
+  text-align: center;
+}
 
-  &_figure {
-    padding: 0;
-    margin: 0;
-    color: #ffffff;
-  }
+.number_figure {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
 }

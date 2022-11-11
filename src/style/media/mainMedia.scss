@@ -9,65 +9,63 @@
   }
   @media (min-width: 1200px) {
   }
-
-  &-buttons {
-    @media (min-width: 0px) {
-      justify-content: center;
-    }
-    @media (min-width: 576px) {
-      justify-content: center;
-    }
-    @media (min-width: 768px) {
-      justify-content: center;
-    }
-    @media (min-width: 992px) {
-      justify-content: left;
-    }
+}
+.main-buttons {
+  @media (min-width: 0px) {
+    justify-content: center;
   }
-  &__content_header,
-  &__content_text {
-    @media (min-width: 0px) {
-      text-align: center;
-    }
-    @media (min-width: 576px) {
-      text-align: center;
-    }
-    @media (min-width: 768px) {
-      text-align: center;
-    }
-    @media (min-width: 992px) {
-      text-align: left;
-    }
+  @media (min-width: 576px) {
+    justify-content: center;
   }
-
-  &__rectangle {
-    @media (min-width: 0px) {
-      width: 6.625rem;
-      height: 0.813rem;
-      position: absolute;
-      bottom: 0;
-      left: 20%;
-    }
-    @media (min-width: 576px) {
-      width: 6.625rem;
-      height: 0.813rem;
-      position: absolute;
-      bottom: 0;
-      left: 26%;
-    }
-    @media (min-width: 768px) {
-      width: 10.625rem;
-      height: 1.75rem;
-      position: absolute;
-      bottom: 0;
-      left: 28%;
-    }
-    @media (min-width: 992px) {
-      width: 15.625rem;
-      height: 2.25rem;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
+  @media (min-width: 992px) {
+    justify-content: left;
+  }
+}
+.main__content_header,
+.main__content_text {
+  @media (min-width: 0px) {
+    text-align: center;
+  }
+  @media (min-width: 576px) {
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+}
+.main__rectangle {
+  @media (min-width: 0px) {
+    width: 6.625rem;
+    height: 0.813rem;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+  }
+  @media (min-width: 576px) {
+    width: 6.625rem;
+    height: 0.813rem;
+    position: absolute;
+    bottom: 0;
+    left: 26%;
+  }
+  @media (min-width: 768px) {
+    width: 10.625rem;
+    height: 1.75rem;
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+  }
+  @media (min-width: 992px) {
+    width: 15.625rem;
+    height: 2.25rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }

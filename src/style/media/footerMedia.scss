@@ -1,69 +1,70 @@
 .footer {
-  &__shapes {
-    @media (min-width: 0px) {
-      margin-top: 2rem;
-      justify-content: center;
-    }
-    @media (min-width: 576px) {
-      margin-top: 2rem;
-      justify-content: center;
-    }
-    @media (min-width: 768px) {
-      margin-top: 0;
-      justify-content: center;
-    }
+}
+
+.footer__shapes {
+  @media (min-width: 0px) {
+    margin-top: 2rem;
+    justify-content: center;
   }
-
-  &_shape {
-    @media (min-width: 0px) {
-      border-radius: 0.5rem;
-      width: 2.556rem;
-      height: 2.556rem;
-    }
-    @media (min-width: 576px) {
-      border-radius: 0.5rem;
-      width: 2.556rem;
-      height: 2.556rem;
-    }
-    @media (min-width: 768px) {
-      border-radius: 0.875rem;
-      width: 3.25rem;
-      height: 3.25rem;
-    }
+  @media (min-width: 576px) {
+    margin-top: 2rem;
+    justify-content: center;
   }
-
-  &__logo {
-    &_society {
-      @media (min-width: 0px) {
-        max-width: 1.357rem;
-        min-width: 0.979rem;
-      }
-      @media (min-width: 576px) {
-        max-width: 1.357rem;
-        min-width: 0.979rem;
-      }
-
-      @media (min-width: 768px) {
-        max-width: 1.913rem;
-        min-width: 1.913rem;
-      }
-      &_2 {
-        @media (min-width: 0px) {
-          max-width: 1.628rem;
-          min-width: 1.243rem;
-        }
-        @media (min-width: 576px) {
-          max-width: 1.628rem;
-          min-width: 1.243rem;
-        }
-        @media (min-width: 768px) {
-          max-width: 2.296rem;
-          min-width: 2.296rem;
-        }
-      }
-    }
+  @media (min-width: 768px) {
+    margin-top: 0;
+    justify-content: center;
   }
 }
+
+.footer_shape {
+  @media (min-width: 0px) {
+    border-radius: 0.5rem;
+    width: 2.556rem;
+    height: 2.556rem;
+  }
+  @media (min-width: 576px) {
+    border-radius: 0.5rem;
+    width: 2.556rem;
+    height: 2.556rem;
+  }
+  @media (min-width: 768px) {
+    border-radius: 0.875rem;
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+}
+
+.footer__logo_society {
+  @media (min-width: 0px) {
+    max-width: 1.357rem;
+    min-width: 0.979rem;
+  }
+  @media (min-width: 576px) {
+    max-width: 1.357rem;
+    min-width: 0.979rem;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 1.913rem;
+    min-width: 1.913rem;
+  }
+}
+
+.footer__logo_society-2 {
+  @media (min-width: 0px) {
+    max-width: 1.628rem;
+    min-width: 1.243rem;
+  }
+  @media (min-width: 576px) {
+    max-width: 1.628rem;
+    min-width: 1.243rem;
+  }
+  @media (min-width: 768px) {
+    max-width: 2.296rem;
+    min-width: 2.296rem;
+  }
+}
+
 .logo__router {
   @media (min-width: 0px) {
     margin-bottom: 2rem;
