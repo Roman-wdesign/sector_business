@@ -1,5 +1,5 @@
 <template>
-  <body style="background-color: white">
+  <body id="white-body">
   <div class="container">
     <div class="content">
       <div class="grid">
