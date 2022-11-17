@@ -66,10 +66,11 @@
       </section>
 
       <section
-        class="row first-section xs-wrap sm-wrap md-nowrap gy-3"
+        class="row first-section xs-wrap sm-wrap md-wrap gy-3"
         style="margin-bottom: 9.375rem"
       >
-        <div class="first-block col-md-6 col-lg-4">
+
+        <div class="first-block col-md-6 col-lg-4 col-xl-8">
           <div class="price__block_list">
             <h2 class="price__header">
               1 cr of land mint price<br />
@@ -79,7 +80,7 @@
             <mcv-btn-main>Connect Wallet</mcv-btn-main>
           </div>
         </div>
-        <div class="first-block col-sm-6 col-md-6">
+        <div class="first-block col-md-6 col-lg-6 col-xl-4">
           <img
             src="../assets/img/thirdBlock.png"
             class="img-fluid"
@@ -136,10 +137,10 @@
       </section>
 
       <section
-        class="row first-section xs-wrap sm-wrap md-nowrap gy-3"
+        class="row first-section xs-wrap sm-wrap md-wrap lg-wrap gy-3"
         style="margin-bottom: 9.375rem"
       >
-        <div class="first-block col-md-6 col-lg-4">
+        <div class="first-block  col-md-6 col-lg-4 col-xl-8">
           <div class="price__block_list">
             <h2 class="price__header">
               1 acre + 4000 Square<br />
@@ -149,11 +150,11 @@
             <mcv-btn-main>Connect Wallet</mcv-btn-main>
           </div>
         </div>
-        <div class="first-block col-sm-6 col-md-6">
+        <div class="first-block  col-md-6 col-lg-6 col-xl-4 ">
           <img
             src="../assets/img/androidImg.png"
             class="img-fluid"
-            alt="secondImg"
+            alt="androidImg"
           />
         </div>
       </section>

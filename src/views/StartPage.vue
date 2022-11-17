@@ -1,13 +1,15 @@
 <template>
-  <body id="white-body">
-  <div class="container">
-    <div class="content">
-      <div class="grid">
-        <mcv-product-list />
-      </div>
+<div class="canvas-main" :style="{backgroundColor: color}">
+<div class="container" >
+  <div class="content">
+    <div class="grid"  >
+      <mcv-product-list />
     </div>
   </div>
-  </body>
+</div>
+</div>
+
+
 
 </template>
 
@@ -18,7 +20,10 @@ export default {
   name: "McvStartPage",
 
   components: { McvProductList },
-  data: () => ({}),
+  data: () => ({
+    color: '#ffffff',
+
+  }),
 };
 </script>
 

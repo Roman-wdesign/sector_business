@@ -1,7 +1,8 @@
 .item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
-
+  //grid-template-columns: repeat(auto-fit, minmax(0.5rem, 1fr));
+  grid-template-columns: 15% 1fr 1fr;
+  grid-template-rows: repeat(1,5rem);
 
   @include Roboto_500_Medium;
   color: $header_background;
